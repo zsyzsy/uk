@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="87px" viewBox="0 0 128 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>下标</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M127.740328,7.74557377 C127.740328,9.34032787 127.208743,10.951694 126.145574,12.2972678 L69.5151913,82.6990164 C68.1363934,84.4100546 66.0598907,85.406776 63.8504918,85.406776 C61.6577049,85.406776 59.5645902,84.4100546 58.2024044,82.6990164 L1.87103825,12.5962842 C-0.637377049,9.47322404 -0.139016393,4.90491803 2.98404372,2.39650273 C6.10710383,-0.111912568 10.6754098,0.386448087 13.1838251,3.5095082 L63.8671038,66.5687432 L114.832787,3.19387978 C117.341202,0.0708196721 121.909508,-0.427540984 125.032568,2.08087432 C126.810055,3.52612022 127.740328,5.61923497 127.740328,7.74557377 Z" id="path-1"></path>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-5" transform="translate(0.000000, -21.000000)">
+            <g id="Group" transform="translate(0.000000, 21.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,196 @@
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x86\Release\CryptoKit.CertEnrollment.Pro.x86.dll
+// PDB:  Last Updated :2018-4-9:1:12:53:434 (UTC) [tracepdb]
+d19178b7-84fa-fcee-aea0-0938947544d6 CryptoKit // SRC=CryptoAgent.cpp MJ= MN=
+#typev  CryptoAgent_cpp99 12 "%0Return current all CSP name: [%10!s!]" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_GetCSPInfo
+{
+bstrAllCSPName, ItemWString -- 10
+}
+#typev  CryptoAgent_cpp450 32 "%0[%10!s!(%11!d!)]: CFCA_GetContainer ok(pbstrContainerName=%12!s!)." //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_GetContainer
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(wchar_t*)m_wstrContainerName.c_str(), ItemWString -- 12
+}
+#typev  CryptoAgent_cpp784 51 "%0Error description: %10!s!" //   LEVEL=INFO FUNC=CCryptoAgent::GetLastErrorDesc
+{
+wszErrorDesc, ItemWString -- 10
+}
+#typev  CryptoAgent_cpp770 50 "%0System error: 0x%10!08x!" //   LEVEL=INFO FUNC=CCryptoAgent::GetLastErrorDesc
+{
+m_hLastError, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp761 49 "%0Resource ID: 0x%10!08x!" //   LEVEL=INFO FUNC=CCryptoAgent::GetLastErrorDesc
+{
+uResourceID, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp758 48 "%0Custom error: 0x%10!08x!" //   LEVEL=INFO FUNC=CCryptoAgent::GetLastErrorDesc
+{
+m_hLastError, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp265 20 "%0[%10!s!(%11!d!)]: CFCA_SetKeyAlgorithm ok." //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_SetKeyAlgorithm
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  CryptoAgent_cpp254 19 "%0[%10!s!(%11!d!)]: wstrKeyAlgorithm=%12!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_SetKeyAlgorithm
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrKeyAlgorithm.c_str(), ItemWString -- 12
+}
+#typev  CryptoAgent_cpp241 18 "%0[%10!s!(%11!d!)]: bstrKeyAlgorithm=%12!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_SetKeyAlgorithm
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+bstrKeyAlgorithm, ItemWString -- 12
+}
+#typev  CryptoAgent_cpp360 26 "%0Dump the Temp Publice Key to file(Base64 with comma) :%10!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_GetTempPublickey
+{
+wstrGUIDFile.c_str(), ItemWString -- 10
+}
+#typev  CryptoAgent_cpp335 24 "%0RSA temp public key" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_GetTempPublickey
+{
+}
+#typev  CryptoAgent_cpp346 25 "%0SM2 temp public key" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_GetTempPublickey
+{
+}
+#typev  CryptoAgent_cpp330 23 "%0dwTempPublicKey(2) :%10!d!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_GetTempPublickey
+{
+dwTempPublicKey, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp323 22 "%0dwTempPublicKey(1) :%10!d!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_GetTempPublickey
+{
+dwTempPublicKey, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp310 21 "%0Key algorithm: %10!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_GetTempPublickey
+{
+bRSAAlgorithm ? KEYTYPE_RSA : KEYTYPE_SM2, ItemWString -- 10
+}
+#typev  CryptoAgent_cpp426 31 "%0[%10!s!(%11!d!)]: CFCA_ImportEncryptCert ok." //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_ImportEncryptCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  CryptoAgent_cpp394 30 "%0[%10!s!(%11!d!)]: lEncryptCertPrivateKeyFlags=0x%12!x!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_ImportEncryptCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+lEncryptCertPrivateKeyFlags, ItemLong -- 12
+}
+#typev  CryptoAgent_cpp393 29 "%0[%10!s!(%11!d!)]: bstrContainerName=%12!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_ImportEncryptCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+bstrContainerName, ItemWString -- 12
+}
+#typev  CryptoAgent_cpp392 28 "%0[%10!s!(%11!d!)]: bstrP7Cert=%12!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_ImportEncryptCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+bstrP7Cert, ItemWString -- 12
+}
+#typev  CryptoAgent_cpp391 27 "%0[%10!s!(%11!d!)]: bstrEncryptedPrivateKey=%12!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_ImportEncryptCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+bstrEncryptedPrivateKey, ItemWString -- 12
+}
+#typev  CryptoAgent_cpp506 36 "%0[%10!s!(%11!d!)]: CFCA_ImportSignCert ok" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  CryptoAgent_cpp471 35 "%0[%10!s!(%11!d!)]: bstrContainerName=%12!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+bstrContainerName, ItemWString -- 12
+}
+#typev  CryptoAgent_cpp470 34 "%0[%10!s!(%11!d!)]: bstrSignCert=%12!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+bstrSignCert, ItemWString -- 12
+}
+#typev  CryptoAgent_cpp469 33 "%0[%10!s!(%11!d!)]: lCertType=%12!d!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+lCertType, ItemLong -- 12
+}
+#typev  CryptoAgent_cpp565 42 "%0dwSignCertKeySpec: %10!d!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_PKCS10CertRequisition
+{
+dwSignCertKeySpec, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp560 41 "%0bRSAAlgorithm: %10!d!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_PKCS10CertRequisition
+{
+bRSAAlgorithm, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp539 40 "%0bstrSubjectDN:%10!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_PKCS10CertRequisition
+{
+bstrSubjectDN, ItemWString -- 10
+}
+#typev  CryptoAgent_cpp538 39 "%0lSignPrivateKeyGenerateFlags:0x%10!x!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_PKCS10CertRequisition
+{
+lSignPrivateKeyGenerateFlags, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp537 38 "%0Cert Type:%10!d!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_PKCS10CertRequisition
+{
+lCertType, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp536 37 "%0Key algorithm: %10!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_PKCS10CertRequisition
+{
+m_wstrKeyAlgorithm.c_str(), ItemWString -- 10
+}
+#typev  CryptoAgent_cpp696 47 "%0bstrSubjectDN:%10!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_PKCS10CertRequisitionwithMD5
+{
+bstrSubjectDN, ItemWString -- 10
+}
+#typev  CryptoAgent_cpp695 46 "%0lSignPrivateKeyGenerateFlags:0x%10!x!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_PKCS10CertRequisitionwithMD5
+{
+lSignPrivateKeyGenerateFlags, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp694 45 "%0Cert Type:%10!d!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_PKCS10CertRequisitionwithMD5
+{
+lCertType, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp693 44 "%0Key algorithm: %10!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_PKCS10CertRequisitionwithMD5
+{
+bRSAAlgorithm ? KEYTYPE_RSA : KEYTYPE_SM2, ItemWString -- 10
+}
+#typev  CryptoAgent_cpp63 11 "%0load data length(RSA test): [%10!u!]" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_CheckCertificateChain
+{
+dwResDataSize, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp47 10 "%0load data length(RSA operation): [%10!u!]" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_CheckCertificateChain
+{
+dwResDataSize, ItemLong -- 10
+}
+#typev  CryptoAgent_cpp144 14 "%0Return current all certificates content: [%10!s!]" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_GetAllCertInfo
+{
+wstrAllCertInfo.c_str(), ItemWString -- 10
+}
+#typev  CryptoAgent_cpp137 13 "%0open personal store success!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_GetAllCertInfo
+{
+}
+#typev  CryptoAgent_cpp220 17 "%0[%10!s!(%11!d!)]: CFCA_SetCSPInfo ok." //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_SetCSPInfo
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  CryptoAgent_cpp175 16 "%0[%10!s!(%11!d!)]: bstrCSPName=%12!s!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_SetCSPInfo
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+bstrCSPName, ItemWString -- 12
+}
+#typev  CryptoAgent_cpp174 15 "%0[%10!s!(%11!d!)]: wKeyLength=%12!d!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_SetCSPInfo
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+lKeyLength, ItemLong -- 12
+}
+#typev  CryptoAgent_cpp652 43 "%0delete key container result:%10!d!" //   LEVEL=INFO FUNC=CCryptoAgent::CFCA_HavePermissiontoGenerateKeyPair
+{
+bRemoveKeyContainer, ItemLong -- 10
+}

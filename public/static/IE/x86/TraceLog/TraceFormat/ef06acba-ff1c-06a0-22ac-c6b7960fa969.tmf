@@ -1,0 +1,36 @@
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x86\Release\CryptoKit.CertEnrollment.Pro.x86.dll
+// PDB:  Last Updated :2018-4-9:1:12:53:434 (UTC) [tracepdb]
+ef06acba-ff1c-06a0-22ac-c6b7960fa969 CryptoKernel // SRC=DataSigning.cpp MJ= MN=
+#typev  DataSigning_cpp359 18 "%0UTF16:%10!s!" //   LEVEL=INFO FUNC=UTF8ToUTF16
+{
+*ppwszUTF16, ItemWString -- 10
+}
+#typev  DataSigning_cpp336 17 "%0UTF16 Length:%10!d!" //   LEVEL=INFO FUNC=UTF8ToUTF16
+{
+utf16Size, ItemLong -- 10
+}
+#typev  DataSigning_cpp327 16 "%0UTF8Source Length:%10!d!" //   LEVEL=INFO FUNC=UTF8ToUTF16
+{
+utf8Length, ItemLong -- 10
+}
+#typev  DataSigning_cpp323 15 "%0UTF8Source:%10!s!" //   LEVEL=INFO FUNC=UTF8ToUTF16
+{
+pszUTF8, ItemString -- 10
+}
+#typev  DataSigning_cpp115 12 "%0CryptGetProvParam-getdata(BOOL):%10!d!, length:%11!d!" //   LEVEL=INFO FUNC=GetProviderInfo
+{
+bResult, ItemLong -- 10
+dwDataLength, ItemLong -- 11
+}
+#typev  DataSigning_cpp89 11 "%0CSP provider name is less than 0" //   LEVEL=ERR FUNC=GetProviderInfo
+{
+}
+#typev  DataSigning_cpp84 10 "%0CryptGetProvParam-getlength(BOOL):%10!d!, length:%11!d!" //   LEVEL=INFO FUNC=GetProviderInfo
+{
+bResult, ItemLong -- 10
+dwDataLength, ItemLong -- 11
+}
+#typev  DataSigning_cpp3486 128 "%0SM2 raw signature size:%10!d!" //   LEVEL=INFO FUNC=SM2EncodeRawSignature
+{
+dwRawSignature, ItemLong -- 10
+}

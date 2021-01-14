@@ -1,0 +1,23 @@
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x86\Release\CryptoKit.CertEnrollment.Pro.x86.dll
+// PDB:  Last Updated :2018-4-9:1:12:53:434 (UTC) [tracepdb]
+dc5e2b80-d913-edf7-30da-17328a249bcc CertEnrollmentKernel // SRC=DecodePrivateKeyInfo.cpp MJ= MN=
+#typev  DecodePrivateKeyInfo_cpp100 16 "%0Attribute Length:%10!d!" //   LEVEL=INFO FUNC=CopyPrivateKeyAttribute
+{
+dwAttributeSize, ItemLong -- 10
+}
+#typev  DecodePrivateKeyInfo_cpp93 15 "%0The first byte is Zero" //   LEVEL=INFO FUNC=CopyPrivateKeyAttribute
+{
+}
+#typev  DecodePrivateKeyInfo_cpp162 20 "%0Invidate ASN.1 private key" //   LEVEL=ERR FUNC=DecodePrivateKey
+{
+}
+#typev  DecodePrivateKeyInfo_cpp158 19 "%0Private Key Child Nodes Count:%10!d!" //   LEVEL=INFO FUNC=DecodePrivateKey
+{
+nChildNodesSize, ItemLong -- 10
+}
+#typev  DecodePrivateKeyInfo_cpp154 18 "%0DecodeASN1Memory Successful" //   LEVEL=INFO FUNC=DecodePrivateKey
+{
+}
+#typev  DecodePrivateKeyInfo_cpp150 17 "%0DecodeASN1Memory failed" //   LEVEL=ERR FUNC=DecodePrivateKey
+{
+}

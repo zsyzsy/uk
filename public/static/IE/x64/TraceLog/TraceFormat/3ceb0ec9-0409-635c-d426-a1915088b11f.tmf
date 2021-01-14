@@ -1,0 +1,73 @@
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+3ceb0ec9-0409-635c-d426-a1915088b11f CertEnrollmentKernel // SRC=CertificateRequisition.cpp MJ= MN=
+#typev  CertificateRequisition_cpp165 25 "%0Delete keyset" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+}
+#typev  CertificateRequisition_cpp140 23 "%0Certificate public key size: %10!u!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+*pdwPublicKeySize, ItemLong -- 10
+}
+#typev  CertificateRequisition_cpp126 22 "%0Certificate public key information size: %10!u!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+*pdwPublicKeySize, ItemLong -- 10
+}
+#typev  CertificateRequisition_cpp106 21 "%0Private Key Generation uKeyAlgID(CALG_SM2_SIGN CMBC):0x%10!x!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+uKeyAlgID, ItemLong -- 10
+}
+#typev  CertificateRequisition_cpp101 20 "%0Private Key Generation uKeyAlgID(CALG_SM2_KEYX CMBC):0x%10!x!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+uKeyAlgID, ItemLong -- 10
+}
+#typev  CertificateRequisition_cpp91 19 "%0Private Key Generation Flags:0x%10!x!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+dwPrivateKeyFlags, ItemLong -- 10
+}
+#typev  CertificateRequisition_cpp76 18 "%0Container Name:%10!s!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+wstrKeyContainerName.c_str(), ItemWString -- 10
+}
+#typev  CertificateRequisition_cpp70 17 "%0Container name: %10!s!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+wstrKeyContainerName.c_str(), ItemWString -- 10
+}
+#typev  CertificateRequisition_cpp64 16 "%0NewKeySetFlags:0x%10!x!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+dwNewKeySetFlags, ItemLong -- 10
+}
+#typev  CertificateRequisition_cpp44 15 "%0Key container doesn't exist, create new." //   LEVEL=INFO FUNC=CreatePublicKey
+{
+}
+#typev  CertificateRequisition_cpp26 14 "%0Always create new key container: %10!s!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+bNewKeyContainer ? L'TRUE' : L'FALSE', ItemWString -- 10
+}
+#typev  CertificateRequisition_cpp25 13 "%0Key algorithm ID: %10!d!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+uKeyAlgID, ItemLong -- 10
+}
+#typev  CertificateRequisition_cpp24 12 "%0RSA algorithm: %10!s!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+bRSAAlgorithm ? L'TRUE' : L'FALSE', ItemWString -- 10
+}
+#typev  CertificateRequisition_cpp23 11 "%0CSP name: %10!s!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+lpwCSPName, ItemWString -- 10
+}
+#typev  CertificateRequisition_cpp22 10 "%0Key length: %10!u!" //   LEVEL=INFO FUNC=CreatePublicKey
+{
+dwKeyLength, ItemLong -- 10
+}
+#typev  CertificateRequisition_cpp265 28 "%0strDigitalSignAlgorithm:%10!s!" //   LEVEL=INFO FUNC=PKCS10CertRequisition
+{
+strDigitalSignAlgorithm.c_str(), ItemString -- 10
+}
+#typev  CertificateRequisition_cpp214 27 "%0lDigestAlgorithm:%10!d!" //   LEVEL=INFO FUNC=PKCS10CertRequisition
+{
+lDigestAlgorithm, ItemLong -- 10
+}
+#typev  CertificateRequisition_cpp213 26 "%0dwSignCertKeySpec:%10!ld!" //   LEVEL=INFO FUNC=PKCS10CertRequisition
+{
+dwSignCertKeySpec, ItemLong -- 10
+}

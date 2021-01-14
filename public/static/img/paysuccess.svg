@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>xhdpi/支付成功</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="8.33926257%" y1="76.192329%" x2="89.4890254%" y2="21.0074922%" id="linearGradient-1">
+            <stop stop-color="#FFD630" offset="0%"></stop>
+            <stop stop-color="#FDC600" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="转账04" transform="translate(-158.000000, -101.000000)">
+            <g id="支付成功" transform="translate(158.000000, 101.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="30" cy="30" r="30"></circle>
+                <polyline id="Path-5" stroke="#FFFFFF" stroke-width="3" points="18 29 27.5131488 38.5131488 43.0131544 23.0131432"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

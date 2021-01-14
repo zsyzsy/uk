@@ -1,0 +1,12 @@
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x86\Release\CryptoKit.CertEnrollment.Pro.x86.dll
+// PDB:  Last Updated :2018-4-9:1:12:53:434 (UTC) [tracepdb]
+c1b10ec0-7651-2782-2d15-4cbdc2e16d50 CryptoKit // SRC=dllmain.cpp MJ= MN=
+#typev  dllmain_cpp26 12 "%0THREAD DETACH" //   LEVEL=INFO FUNC=DllMain
+{
+}
+#typev  dllmain_cpp23 11 "%0THREAD ATTACH" //   LEVEL=INFO FUNC=DllMain
+{
+}
+#typev  dllmain_cpp20 10 "%0PROCESS ATTACH" //   LEVEL=INFO FUNC=DllMain
+{
+}

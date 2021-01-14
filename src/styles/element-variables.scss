@@ -1,0 +1,18 @@
+$--color-primary: #FFD630 !default;
+$--color-danger: #FF1A2E;
+$--color-success: #0CAE5D;
+$--color-warning: #FF5712;
+$--color-black: #252529;
+$--color-text-primary: #293040;
+$--color-text-secondary: #717787;
+$--color-text-placeholder: #DFE1E6;
+$--border-color-base: #DFE1E6;
+
+$--button-primary-border-color: #FFD630;
+$--button-primary-background-color: #FFD630;
+$--button-primary-font-color: #293040;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

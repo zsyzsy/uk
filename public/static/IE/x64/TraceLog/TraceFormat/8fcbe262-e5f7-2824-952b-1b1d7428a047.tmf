@@ -1,0 +1,307 @@
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+8fcbe262-e5f7-2824-952b-1b1d7428a047 CryptoKernel // SRC=CertificateChainOperate.cpp MJ= MN=
+#typev  CertificateChainOperate_cpp1301 80 "%0load xml dom document success !" //   LEVEL=INFO FUNC=LoadXMLDom
+{
+}
+#typev  CertificateChainOperate_cpp1285 79 "%0To new memory dataSize:[%10!u!]" //   LEVEL=INFO FUNC=LoadXMLDom
+{
+dwResDataSize+1, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp1284 78 "%0add ending character to data" //   LEVEL=INFO FUNC=LoadXMLDom
+{
+}
+#typev  CertificateChainOperate_cpp1273 77 "%0enter parameter Data Size:[%10!u!]" //   LEVEL=INFO FUNC=LoadXMLDom
+{
+dwResDataSize, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp905 68 "%0node value: [%10!s!]." //   LEVEL=INFO FUNC=GetNodeValue
+{
+*bstrNodeValue, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp894 67 "%0node value length: [%10!d!]." //   LEVEL=INFO FUNC=GetNodeValue
+{
+iNodeValueSize, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp847 66 "%0Success Find the node :[%10!s!]." //   LEVEL=INFO FUNC=FindChildNode
+{
+bstrChildNodeName, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp838 65 "%0Current parse Node Name :[%10!s!]and Index [%11!ld!]." //   LEVEL=INFO FUNC=FindChildNode
+{
+bstrCurrentChildNodeName, ItemWString -- 10
+i, ItemLong -- 11
+}
+#typev  CertificateChainOperate_cpp828 64 "%0Current parse Node Index :[%10!ld!]" //   LEVEL=INFO FUNC=FindChildNode
+{
+i, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp811 63 "%0Child node list length: [%10!ld!]." //   LEVEL=INFO FUNC=FindChildNode
+{
+lChildListLength, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp799 62 "%0node name which to find :[%10!s!]." //   LEVEL=INFO FUNC=FindChildNode
+{
+bstrChildNodeName, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp771 61 "%0Root Node Name [%10!s!]" //   LEVEL=INFO FUNC=GetXMLRootNode
+{
+bstrNodeName, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp169 17 "%0stSysTime(2): hour=%10!d!, min=%11!d!, sec=%12!d!" //   LEVEL=INFO FUNC=ConvertUTCtimetoLocalTime
+{
+stSysTime.wHour, ItemLong -- 10
+stSysTime.wMinute, ItemLong -- 11
+stSysTime.wSecond, ItemLong -- 12
+}
+#typev  CertificateChainOperate_cpp168 16 "%0stSysTime(2): year=%10!d!, mon=%11!d!, day=%12!d!, dayOfweek=%13!d!" //   LEVEL=INFO FUNC=ConvertUTCtimetoLocalTime
+{
+stSysTime.wYear, ItemLong -- 10
+stSysTime.wMonth, ItemLong -- 11
+stSysTime.wDay, ItemLong -- 12
+stSysTime.wDayOfWeek, ItemLong -- 13
+}
+#typev  CertificateChainOperate_cpp158 15 "%0stSysTime(1): hour=%10!d!, min=%11!d!, sec=%12!d!" //   LEVEL=INFO FUNC=ConvertUTCtimetoLocalTime
+{
+stSysTime.wHour, ItemLong -- 10
+stSysTime.wMinute, ItemLong -- 11
+stSysTime.wSecond, ItemLong -- 12
+}
+#typev  CertificateChainOperate_cpp157 14 "%0stSysTime(1): year=%10!d!, mon=%11!d!, day=%12!d!, dayOfweek=%13!d!" //   LEVEL=INFO FUNC=ConvertUTCtimetoLocalTime
+{
+stSysTime.wYear, ItemLong -- 10
+stSysTime.wMonth, ItemLong -- 11
+stSysTime.wDay, ItemLong -- 12
+stSysTime.wDayOfWeek, ItemLong -- 13
+}
+#typev  CertificateChainOperate_cpp98 12 "%0get property content success!" //   LEVEL=INFO FUNC=GetCertificateContextProperty
+{
+}
+#typev  CertificateChainOperate_cpp86 11 "%0get property length: [%10!u!]." //   LEVEL=INFO FUNC=GetCertificateContextProperty
+{
+dwDataSize, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp78 10 "%0 property ID: [%10!u!]." //   LEVEL=INFO FUNC=GetCertificateContextProperty
+{
+dwPropId, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp995 71 "%0get Import Path:[%10!s!]" //   LEVEL=INFO FUNC=GetRegisteredCertificateInfoNode
+{
+stCertRegeditInfo.pwsImportPath, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp999 72 "%0get Entry Point :[%10!s!]" //   LEVEL=INFO FUNC=GetRegisteredCertificateInfoNode
+{
+stCertRegeditInfo.pwsEntryPoint, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp1003 73 "%0get registered Content:[%10!s!]" //   LEVEL=INFO FUNC=GetRegisteredCertificateInfoNode
+{
+stCertRegeditInfo.pwsContent, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp983 70 "%0node Index [%10!ld!]." //   LEVEL=INFO FUNC=GetRegisteredCertificateInfoNode
+{
+i, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp965 69 "%0RegeditInfo node list length: [%10!ld!]" //   LEVEL=INFO FUNC=GetRegisteredCertificateInfoNode
+{
+lChlidListLength, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp723 60 "%0Open  certificate store SUCCESS." //   LEVEL=INFO FUNC=CheckCertificateChainIntegrity
+{
+}
+#typev  CertificateChainOperate_cpp712 59 "%0System version to litter can't support this certificate" //   LEVEL=INFO FUNC=CheckCertificateChainIntegrity
+{
+}
+#typev  CertificateChainOperate_cpp705 58 "%0Certificate Signature AlgorithmOID: %10!s!" //   LEVEL=INFO FUNC=CheckCertificateChainIntegrity
+{
+pstCertContext->pCertInfo->SignatureAlgorithm.pszObjId, ItemString -- 10
+}
+#typev  CertificateChainOperate_cpp702 57 "%0verify validate certificate Issue DN:[%10!s!]" //   LEVEL=INFO FUNC=CheckCertificateChainIntegrity
+{
+lpwCertIssuerDN, ItemWString -- 10
+}
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+#typev  CertificateChainOperate_cpp696 56 "%0verify validate certificate subject DN:[%10!s!]" //   LEVEL=INFO FUNC=CheckCertificateChainIntegrity
+{
+lpwCertSubjectDN, ItemWString -- 10
+}
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+#typev  CertificateChainOperate_cpp690 55 "%0Root certificate(BOOL): %10!d!" //   LEVEL=INFO FUNC=CheckCertificateChainIntegrity
+{
+bIsRootCert, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp678 54 "%0to check  CA certificate signature and certificate chain integrity!" //   LEVEL=INFO FUNC=CheckCertificateChainIntegrity
+{
+}
+#typev  CertificateChainOperate_cpp675 53 "%0bIsSupportSHA256: %10!d!" //   LEVEL=INFO FUNC=CheckCertificateChainIntegrity
+{
+bIsSupportSHA256, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp625 52 "%0add certificate to store success" //   LEVEL=INFO FUNC=AddCACertficatetoStore
+{
+}
+#typev  CertificateChainOperate_cpp618 51 "%0Certificate has existed" //   LEVEL=INFO FUNC=AddCACertficatetoStore
+{
+}
+#typev  CertificateChainOperate_cpp602 50 "%0Root certificate(BOOL): %10!d!" //   LEVEL=INFO FUNC=AddCACertficatetoStore
+{
+bIsRootCert, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp596 49 "%0query certificate subject DN:[%10!s!]" //   LEVEL=INFO FUNC=AddCACertficatetoStore
+{
+lpwCertSubjectDN, ItemWString -- 10
+}
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+#typev  CertificateChainOperate_cpp586 48 "%0Open CA certificate store SUCCESS." //   LEVEL=INFO FUNC=AddCACertficatetoStore
+{
+}
+#typev  CertificateChainOperate_cpp1155 76 "%0Current parse Node Name [%10!s!] and Index [%11!ld!]" //   LEVEL=INFO FUNC=ParseRootCACertificateNode
+{
+bstrNodeName, ItemWString -- 10
+i, ItemLong -- 11
+}
+#typev  CertificateChainOperate_cpp1148 75 "%0Current parse Node Index [%10!ld!]" //   LEVEL=INFO FUNC=ParseRootCACertificateNode
+{
+i, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp1130 74 "%0the number of RootCACertficate child node : [%10!ld!]" //   LEVEL=INFO FUNC=ParseRootCACertificateNode
+{
+lCertificateListLength, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp139 13 "%0return time string :[%10!s!]." //   LEVEL=INFO FUNC=GetTimeString
+{
+wsSysTime, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp482 46 "%0CryptEnumProviders(ERROR_NO_MORE_ITEMS)" //   LEVEL=INFO FUNC=GetAllCSPName
+{
+}
+#typev  CertificateChainOperate_cpp487 47 "%0CryptEnumProviders() encounter an invalid CSP(0x%10!08x!)." //   LEVEL=INFO FUNC=GetAllCSPName
+{
+HRESULT_FROM_WIN32(dwErrorCode), ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp463 45 "%0Find provider name is (%10!s!)." //   LEVEL=INFO FUNC=GetAllCSPName
+{
+pwstrProvName, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp455 44 "%0Provider name Length is %10!d!." //   LEVEL=INFO FUNC=GetAllCSPName
+{
+dwProvNameSize, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp454 43 "%0Provider type is %10!d!." //   LEVEL=INFO FUNC=GetAllCSPName
+{
+dwProvideType, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp328 35 "%0return current Certificate Information :[%10!s!]." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+wstrCertificateInfo.c_str(), ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp323 34 "%0current certificate CSP Name: [%10!s!]." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+pstKeyProvInfo->pwszProvName, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp317 33 "%0to get certificate CSP name." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+}
+#typev  CertificateChainOperate_cpp311 32 "%0current certificate end time: [%10!s!]." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+wsTime.c_str(), ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp304 31 "%0ConvertUTCtimetoLocalTime(2)." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+}
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+#typev  CertificateChainOperate_cpp293 30 "%0to query end date." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+}
+#typev  CertificateChainOperate_cpp287 29 "%0current certificate begin time: [%10!s!]." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+wsTime.c_str(), ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp280 28 "%0ConvertUTCtimetoLocalTime(1)." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+}
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+#typev  CertificateChainOperate_cpp269 27 "%0to query begin date." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+}
+#typev  CertificateChainOperate_cpp254 26 "%0lpwsData+2: [%10!s!]." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+lpwsData + 2, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp242 25 "%0current certificate serial number(capital letter):[%10!s!]." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+lpwsData, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp240 24 "%0wcslen(lpwsData):[%10!d!]." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+(int)wcslen(lpwsData), ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp236 23 "%0current certificate serial number:[%10!s!]." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+lpwsData, ItemWString -- 10
+}
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+#typev  CertificateChainOperate_cpp224 22 "%0to query serial number." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+}
+#typev  CertificateChainOperate_cpp209 21 "%0current certificate subject DN :[%10!s!]." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+lpwsData, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp208 20 "%0current certificate subject DN Length:[%10!u!]." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+dwpwsDataLen, ItemLong -- 10
+}
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+#typev  CertificateChainOperate_cpp202 19 "%0to query subject DN." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+}
+#typev  CertificateChainOperate_cpp197 18 "%0dwCertInfoFlag: [0x%10!x!]." //   LEVEL=INFO FUNC=GetCertificateInfo
+{
+dwCertInfoFlag, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp1397 81 "%0Import certificate chain success!" //   LEVEL=INFO FUNC=ImportCertificateChainfromBlobData
+{
+}
+#typev  CertificateChainOperate_cpp410 42 "%0return ALL Certificate Information :[%10!s!]." //   LEVEL=INFO FUNC=GetAllCertificatesInfoinStore
+{
+strAllCertInfo.c_str(), ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp409 41 "%0the number of query certificates:[%10!d!]." //   LEVEL=INFO FUNC=GetAllCertificatesInfoinStore
+{
+iLoop, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp397 40 "%0current [%10!d!] certificate information [%11!s!]." //   LEVEL=INFO FUNC=GetAllCertificatesInfoinStore
+{
+iLoop, ItemLong -- 10
+wstrCertificateInfo.c_str(), ItemWString -- 11
+}
+#typev  CertificateChainOperate_cpp389 39 "%0Invoke function: (GetCertificateInfo)  --Failed HRESULT: (0x%10!x!)" //   LEVEL=WARNING FUNC=GetAllCertificatesInfoinStore
+{
+hResult, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp388 38 "%0get [%10!d!] certificate information error." //   LEVEL=WARNING FUNC=GetAllCertificatesInfoinStore
+{
+iLoop, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp382 37 "%0to get [%10!d!] certificate information." //   LEVEL=INFO FUNC=GetAllCertificatesInfoinStore
+{
+iLoop, ItemLong -- 10
+}
+#typev  CertificateChainOperate_cpp378 36 "%0Loop to query certificate information." //   LEVEL=INFO FUNC=GetAllCertificatesInfoinStore
+{
+}
+#typev  CertificateChainOperate_cpp1424 83 "%0load Resource Section name: %10!s!" //   LEVEL=INFO FUNC=ImportCertificateChainfromResoure
+{
+lpSection, ItemWString -- 10
+}
+#typev  CertificateChainOperate_cpp1423 82 "%0load Resource ID: [%10!u!]" //   LEVEL=INFO FUNC=ImportCertificateChainfromResoure
+{
+uResID, ItemLong -- 10
+}

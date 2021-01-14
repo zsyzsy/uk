@@ -1,0 +1,124 @@
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+27760c7b-0c0e-3425-58e1-eb361aa11aaa CryptoKernel // SRC=Misc.cpp MJ= MN=
+#typev  Misc_cpp1021 46 "%0system check result is: %10!d!" //   LEVEL=INFO FUNC=CheckIsSystemSupportSHA256
+{
+bResult, ItemLong -- 10
+}
+#typev  Misc_cpp996 45 "%0This System is Client" //   LEVEL=INFO FUNC=CheckIsSystemSupportSHA256
+{
+}
+#typev  Misc_cpp969 44 "%0This System is Sever" //   LEVEL=INFO FUNC=CheckIsSystemSupportSHA256
+{
+}
+#typev  Misc_cpp964 43 "%0ProductType: %10!d!, System Version: %11!d!.%12!d!.%13!d!.%14!d!" //   LEVEL=INFO FUNC=CheckIsSystemSupportSHA256
+{
+osvi.wProductType, ItemLong -- 10
+osvi.dwMajorVersion, ItemLong -- 11
+osvi.dwMinorVersion, ItemLong -- 12
+osvi.wServicePackMajor, ItemLong -- 13
+osvi.wServicePackMinor, ItemLong -- 14
+}
+#typev  Misc_cpp674 30 "%0Write file path:[%10!s!]" //   LEVEL=INFO FUNC=WriteFileSimple
+{
+lpwFilePathName, ItemWString -- 10
+}
+#typev  Misc_cpp401 23 "%0Invalid parameter." //   LEVEL=INFO FUNC=ConvertStringToBinaryData
+{
+}
+#typev  Misc_cpp383 22 "%0Invalid parameter." //   LEVEL=INFO FUNC=ConvertStringToBinaryData
+{
+}
+#typev  Misc_cpp228 18 "%0Target trust site has existed." //   LEVEL=INFO FUNC=AddTrustSite
+{
+}
+#typev  Misc_cpp220 17 "%0Zone attributes without ZAFLAGS_REQUIRE_VERIFICATION flag." //   LEVEL=INFO FUNC=AddTrustSite
+{
+}
+#typev  Misc_cpp209 16 "%0Set zone attributes - Flag: %10!u!, Displayname: %11!s!, Description: %12!s!" //   LEVEL=INFO FUNC=AddTrustSite
+{
+stZoneAttributes.dwFlags, ItemLong -- 10
+stZoneAttributes.szDisplayName, ItemWString -- 11
+stZoneAttributes.szDescription, ItemWString -- 12
+}
+#typev  Misc_cpp199 15 "%0Target trust site has existed." //   LEVEL=INFO FUNC=AddTrustSite
+{
+}
+#typev  Misc_cpp184 14 "%0Set zone attributes - Flag: %10!u!, Displayname: %11!s!, Description: %12!s!" //   LEVEL=INFO FUNC=AddTrustSite
+{
+stZoneAttributes.dwFlags, ItemLong -- 10
+stZoneAttributes.szDisplayName, ItemWString -- 11
+stZoneAttributes.szDescription, ItemWString -- 12
+}
+#typev  Misc_cpp181 13 "%0Zone attributes with ZAFLAGS_REQUIRE_VERIFICATION flag." //   LEVEL=INFO FUNC=AddTrustSite
+{
+}
+#typev  Misc_cpp176 12 "%0Get zone attributes - Flag: %10!u!, Displayname: %11!s!, Description: %12!s!" //   LEVEL=INFO FUNC=AddTrustSite
+{
+stZoneAttributes.dwFlags, ItemLong -- 10
+stZoneAttributes.szDisplayName, ItemWString -- 11
+stZoneAttributes.szDescription, ItemWString -- 12
+}
+#typev  Misc_cpp937 42 "%0[%10!s!(%11!d!)]: pwszTempPathBuffer=%12!s!" //   LEVEL=INFO FUNC=GetTempDirPath
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+pwszTempPathBuffer, ItemWString -- 12
+}
+#typev  Misc_cpp933 41 "%0[%10!s!(%11!d!)]: GetTempPath failed(0x%12!x!)." //   LEVEL=ERR FUNC=GetTempDirPath
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+hr, ItemLong -- 12
+}
+#typev  Misc_cpp908 40 "%0[%10!s!(%11!d!)]: StringFromGUID2 failed(0x%12!x!)." //   LEVEL=ERR FUNC=CreateGUIDStr
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+hr, ItemLong -- 12
+}
+#typev  Misc_cpp900 39 "%0[%10!s!(%11!d!)]: CoCreateGuid failed(0x%12!x!)." //   LEVEL=ERR FUNC=CreateGUIDStr
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+hr, ItemLong -- 12
+}
+#typev  Misc_cpp877 38 "%0[%10!s!(%11!d!)]: WriteFileSimple failed(0x%12!x!)." //   LEVEL=ERR FUNC=DumpDatatoTempFile
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+hResult, ItemLong -- 12
+}
+#typev  Misc_cpp869 37 "%0[%10!s!(%11!d!)]: wstrWriteFilePath=[%12!s!]" //   LEVEL=INFO FUNC=DumpDatatoTempFile
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrWriteFilePath.c_str(), ItemWString -- 12
+}
+#typev  Misc_cpp862 36 "%0[%10!s!(%11!d!)]: GetTempDirPath failed(0x%12!x!)." //   LEVEL=ERR FUNC=DumpDatatoTempFile
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+hResult, ItemLong -- 12
+}
+#typev  Misc_cpp856 35 "%0[%10!s!(%11!d!)]: CreateGUIDStr failed(0x%12!x!)." //   LEVEL=ERR FUNC=DumpDatatoTempFile
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+hResult, ItemLong -- 12
+}
+#typev  Misc_cpp49 10 "%0Splitted string: %10!s!" //   LEVEL=INFO FUNC=SplitStrings
+{
+lpwBuffer, ItemWString -- 10
+}
+#typev  Misc_cpp294 21 "%0Success." //   LEVEL=INFO FUNC=AddTrustSites
+{
+}
+#typev  Misc_cpp284 20 "%0Add trust site: %10!s!" //   LEVEL=INFO FUNC=AddTrustSites
+{
+vtrSubStringSet[nIndex].c_str(), ItemWString -- 10
+}
+#typev  Misc_cpp280 19 "%0Site count: %10!d!" //   LEVEL=INFO FUNC=AddTrustSites
+{
+(int)vtrSubStringSet.size(), ItemLong -- 10
+}

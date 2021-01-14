@@ -1,0 +1,68 @@
+#pragma autorecover
+#pragma classflags("forceupdate")
+#pragma namespace("\\\\.\\root\\WMI")
+//
+// WPP Generated File
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x86\Release\CryptoKit.CertEnrollment.Pro.x86.dll
+// PDB:  Last Updated :2018-4-9:1:12:53:434 (UTC) [tracepdb]
+//
+
+//ModuleName = CryptoKit.CertEnrollment.Pro.x86Toolkits	 (Init called in Function DllMain)
+[Dynamic,
+ Description("CryptoKit.CertEnrollment.Pro.x86_Toolkits"),
+ guid("{5C8F2A58-369A-44f0-9235-C05ECB1DD73E}"),
+ locale("MS\\0x409")]
+class CryptoKit.CertEnrollment.Pro.x86Toolkits : EventTrace
+{
+    [Description ("Enable Flags") : amended,
+        ValueDescriptions{
+             "ERR Flag",
+             "WARNING Flag",
+             "INFO Flag",
+             "VERBOSE Flag"},
+        DefineValues{
+             "ERR",
+             "WARNING",
+             "INFO",
+             "VERBOSE"},
+        Values{
+             "ERR",
+             "WARNING",
+             "INFO",
+             "VERBOSE"},
+        ValueMap{
+             "0x00000001",
+             "0x00000002",
+             "0x00000004",
+             "0x00000008"}: amended
+    ]
+    uint32 Flags;
+    [Description ("Levels") : amended,
+        ValueDescriptions{
+            "Abnormal exit or termination",
+            "Severe errors that need logging",
+            "Warnings such as allocation failure",
+            "Includes non-error cases",
+            "Detailed traces from intermediate steps" } : amended,
+         DefineValues{
+            "TRACE_LEVEL_FATAL",
+            "TRACE_LEVEL_ERROR",
+            "TRACE_LEVEL_WARNING"
+            "TRACE_LEVEL_INFORMATION",
+            "TRACE_LEVEL_VERBOSE" },
+        Values{
+            "Fatal",
+            "Error",
+            "Warning",
+            "Information",
+            "Verbose" },
+        ValueMap{
+            "0x1",
+            "0x2",
+            "0x3",
+            "0x4",
+            "0x5" },
+        ValueType("index")
+    ]
+    uint32 Level;
+};

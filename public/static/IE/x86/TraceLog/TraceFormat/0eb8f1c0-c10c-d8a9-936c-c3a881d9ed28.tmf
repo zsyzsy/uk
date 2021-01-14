@@ -1,0 +1,25 @@
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x86\Release\CryptoKit.CertEnrollment.Pro.x86.dll
+// PDB:  Last Updated :2018-4-9:1:12:53:434 (UTC) [tracepdb]
+0eb8f1c0-c10c-d8a9-936c-c3a881d9ed28 CryptoKernel // SRC=tracehelper.cpp MJ= MN=
+#typev  tracehelper_cpp21 10 "%0Enter (%10!s!)" //   LEVEL=VERBOSE FUNC=TraceHelper::TraceHelper
+{
+m_lpwFunc, ItemWString -- 10
+}
+#typev  tracehelper_cpp31 11 "%0Exit (%10!s!)" //   LEVEL=VERBOSE FUNC=TraceHelper::~TraceHelper
+{
+m_lpwFunc, ItemWString -- 10
+}
+#typev  tracehelper_cpp66 14 "%0Invoke function: (%10!s!)  -- HRESULT: (0x%11!x!)" //   LEVEL=INFO FUNC=TraceHRESULT
+{
+pwchFunctionInfo, ItemWString -- 10
+hr, ItemLong -- 11
+}
+#typev  tracehelper_cpp62 13 "%0Invoke function: (%10!s!)  --Failed HRESULT: (0x%11!x!)" //   LEVEL=WARNING FUNC=TraceHRESULT
+{
+pwchFunctionInfo, ItemWString -- 10
+hr, ItemLong -- 11
+}
+#typev  tracehelper_cpp31 11 "%0Exit (%10!s!)" //   LEVEL=VERBOSE FUNC=TraceHelper::`scalar deleting destructor'
+{
+m_lpwFunc, ItemWString -- 10
+}

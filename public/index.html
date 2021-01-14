@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title><%= webpackConfig.name %></title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= webpackConfig.name %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+
+  <div id="FakeCryptoAgent" style="display: none;"></div>
+  <!-- 证书签名-->
+  <div id="FakeCertCryptoAgent" style="display: none;"></div>
+
+  <!--cfca密码键盘-->
+  <script type="text/javascript" src="./static/assets/Keyboard/cfcasip.min.js" charset="UTF-8"></script>
+  <!--cfca密码键盘用系统键盘-->
+  <script type="text/javascript" src="./static/assets/Keyboard/CFCASIPInput.min.js"></script>
+
+  <script>
+    var CryptoAgent = "";//证书下载组件对象
+    var CertCryptoAgent = "";//证书签名组件对象
+    (function () {
+      var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+      var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
+      var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; //判断是否IE的Edge浏览器
+      var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+      if (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE", "")) < 10) {
+        console.log("您的浏览器版本过低，请使用IE10及以上版本!");
+        window.alert('您的浏览器版本过低，请使用IE10及以上版本!');
+        return;
+      } else {
+        //需要先引用第三方的组件，通过object引入
+        if (window.navigator.cpuClass == "x86") {
+          document.getElementById("FakeCryptoAgent").innerHTML = "<object id=\"CryptoAgent\" codebase=\"./static/IE/x86/CryptoKit.CertEnrollment.Pro.x86.cab\" classid=\"clsid:71BB5253-EF2B-4C5B-85FF-1FD6A03C29A6\" ></object>";
+          document.getElementById("FakeCertCryptoAgent").innerHTML = "<object id=\"CertCryptoAgent\" codebase=\"./static/IE/x86/CryptoKit.TFB.Paperless.x86.cab\" classid=\"clsid:1FDCA026-D205-4967-94B4-DA5969BAA6FC\" ></object>";
+        }
+        else {
+          document.getElementById("FakeCryptoAgent").innerHTML = "<object id=\"CryptoAgent\" codebase=\"./static/IE/x64/CryptoKit.CertEnrollment.Pro.x64.cab\" classid=\"clsid:9E7B8F05-ADBE-4067-ABC6-28E0230A5C18\" ></object>";
+          document.getElementById("FakeCertCryptoAgent").innerHTML = "<object id=\"CertCryptoAgent\" codebase=\"./static/IE/x64/CryptoKit.TFB.Paperless.x64.cab\" classid=\"clsid:F3049B70-242C-4FAE-A8E5-AC1A0665CE76\"  ></object>";
+        };
+        CryptoAgent = document.getElementById("CryptoAgent");
+        CertCryptoAgent = document.getElementById("CertCryptoAgent");
+      };
+    })();
+  </script>
+
+</body>
+
+</html>

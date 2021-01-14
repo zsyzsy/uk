@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>ing</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="8.33926257%" y1="76.192329%" x2="89.4890254%" y2="21.0074922%" id="linearGradient-1">
+            <stop stop-color="#FFD630" offset="0%"></stop>
+            <stop stop-color="#FDC600" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="支付处理中" transform="translate(-158.000000, -103.000000)">
+            <g id="Group-3" transform="translate(158.000000, 103.000000)">
+                <g id="ing">
+                    <path d="M20.8596493,18.8580009 C21.4119341,18.8580009 21.8596493,19.3057161 21.8596493,19.8580009 L21.8596493,30.8570009 L38.8596493,30.8580009 C39.4119341,30.8580009 39.8596493,31.3057161 39.8596493,31.8580009 C39.8596493,32.4102856 39.4119341,32.8580009 38.8596493,32.8580009 L20.8769585,32.8578541 C20.8712005,32.8579518 20.8654306,32.8580009 20.8596493,32.8580009 C20.3073646,32.8580009 19.8596493,32.4102856 19.8596493,31.8580009 L19.8596493,19.8580009 C19.8596493,19.3057161 20.3073646,18.8580009 20.8596493,18.8580009 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(29.859649, 25.858001) rotate(-45.000000) translate(-29.859649, -25.858001) "></path>
+                    <circle id="Oval" fill="url(#linearGradient-1)" cx="30" cy="30" r="30"></circle>
+                    <polyline id="Path-2" stroke="#FFFFFF" stroke-width="3" points="29.9490097 16.057141 29.9490097 31.9168634 42.9219958 40.663475"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

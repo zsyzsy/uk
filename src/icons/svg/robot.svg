@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="119px" height="126px" viewBox="0 0 119 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>机器人</title>
+    <desc>Created with Sketch.</desc>
+    <g id="控件" stroke-width="1" fill-rule="evenodd">
+        <g id="画板备份-7" transform="translate(-4.000000, -1.000000)">
+            <path d="M63.5,8 C96.3609426,8 123,34.6390574 123,67.5 C123,100.360943 96.3609426,127 63.5,127 C30.6390574,127 4,100.360943 4,67.5 C4,34.6390574 30.6390574,8 63.5,8 Z M38,42 C33.3055796,42 29.5,45.8055796 29.5,50.5 C29.5,55.1944204 33.3055796,59 38,59 C42.6944204,59 46.5,55.1944204 46.5,50.5 C46.5,45.8055796 42.6944204,42 38,42 Z M89,42 C84.3055796,42 80.5,45.8055796 80.5,50.5 C80.5,55.1944204 84.3055796,59 89,59 C93.6944204,59 97.5,55.1944204 97.5,50.5 C97.5,45.8055796 93.6944204,42 89,42 Z" id="Combined-Shape"></path>
+            <rect id="Rectangle" transform="translate(27.000000, 20.500000) rotate(-30.000000) translate(-27.000000, -20.500000) " x="21" y="-1" width="12" height="43" rx="5.97333333"></rect>
+            <rect id="Rectangle-Copy" transform="translate(104.000000, 20.500000) scale(-1, 1) rotate(-30.000000) translate(-104.000000, -20.500000) " x="98" y="-1" width="12" height="43" rx="5.97333333"></rect>
+        </g>
+    </g>
+</svg>

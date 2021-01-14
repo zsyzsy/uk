@@ -1,0 +1,169 @@
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+a1adbb98-8e0e-571f-58d4-731ab07c54a2 CertEnrollmentKernel // SRC=PKCS10Request.cpp MJ= MN=
+#typev  PKCS10Request_cpp72 10 "%0String Type:%10!u!; String Data Size:%11!u!" //   LEVEL=INFO FUNC=ComposeRSAEVPPrivateKey
+{
+dwStringType, ItemLong -- 10
+dwDataSize, ItemLong -- 11
+}
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x64\Release\CryptoKit.CertEnrollment.Pro.x64.dll
+// PDB:  Last Updated :2018-4-9:1:13:58:656 (UTC) [tracepdb]
+#typev  PKCS10Request_cpp1590 62 "%0[%10!s!(%11!d!)]: dwDataOutLength=%12!d!, ppDataOut=%13!s!" //   LEVEL=INFO FUNC=TransformBase64EncodedDatatoHoldCRLFPer64Chars
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwDataOutLength, ItemLong -- 12
+(char*)(*ppDataOut), ItemString -- 13
+}
+#typev  PKCS10Request_cpp1552 61 "%0[%10!s!(%11!d!)]: dwDataOutLengthTmp=%12!ld!" //   LEVEL=INFO FUNC=TransformBase64EncodedDatatoHoldCRLFPer64Chars
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwDataOutLengthTmp, ItemLong -- 12
+}
+#typev  PKCS10Request_cpp1547 60 "%0[%10!s!(%11!d!)]: dwDataInLength=%12!d!, ppDataOut=%13!s!" //   LEVEL=INFO FUNC=TransformBase64EncodedDatatoHoldCRLFPer64Chars
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwDataInLength, ItemLong -- 12
+(char*)pDataIn, ItemString -- 13
+}
+#typev  PKCS10Request_cpp155 14 "%0Object Identifier:%10!s!" //   LEVEL=INFO FUNC=ComposeStandardAttribute
+{
+objectAttribute.pszObjId, ItemString -- 10
+}
+#typev  PKCS10Request_cpp108 12 "%0BIT String Data Size:%10!u!" //   LEVEL=INFO FUNC=ComposeBITString
+{
+dwDataSize, ItemLong -- 10
+}
+#typev  PKCS10Request_cpp72 10 "%0String Type:%10!u!; String Data Size:%11!u!" //   LEVEL=INFO FUNC=ComposeAnyString
+{
+dwStringType, ItemLong -- 10
+dwDataSize, ItemLong -- 11
+}
+#typev  PKCS10Request_cpp1237 40 "%0Signed Hash Data Size:%10!d!" //   LEVEL=INFO FUNC=PKCS10CalculateHashandSign
+{
+dwSignedDataSize, ItemLong -- 10
+}
+#typev  PKCS10Request_cpp1228 39 "%0Asymmetric Algorithm Object ID:%10!s!" //   LEVEL=INFO FUNC=PKCS10CalculateHashandSign
+{
+strAsymmetricAlgorithm.c_str(), ItemString -- 10
+}
+#typev  PKCS10Request_cpp1227 38 "%0It is NOT RSA signature" //   LEVEL=INFO FUNC=PKCS10CalculateHashandSign
+{
+}
+#typev  PKCS10Request_cpp1221 37 "%0It is RSA signature" //   LEVEL=INFO FUNC=PKCS10CalculateHashandSign
+{
+}
+#typev  PKCS10Request_cpp1216 36 "%0Success second time to sign hash data" //   LEVEL=INFO FUNC=PKCS10CalculateHashandSign
+{
+}
+#typev  PKCS10Request_cpp1189 35 "%0Success first time get signed hash data length" //   LEVEL=INFO FUNC=PKCS10CalculateHashandSign
+{
+}
+#typev  PKCS10Request_cpp1179 34 "%0Success get hash data" //   LEVEL=INFO FUNC=PKCS10CalculateHashandSign
+{
+}
+#typev  PKCS10Request_cpp1159 32 "%0It is final block to be calculated hash" //   LEVEL=INFO FUNC=PKCS10CalculateHashandSign
+{
+}
+#typev  PKCS10Request_cpp1147 31 "%0Success create hash handle" //   LEVEL=INFO FUNC=PKCS10CalculateHashandSign
+{
+}
+#typev  PKCS10Request_cpp1132 30 "%0CSP provider name:%10!s!" //   LEVEL=INFO FUNC=PKCS10CalculateHashandSign
+{
+(char*) pProviderName, ItemString -- 10
+}
+#typev  PKCS10Request_cpp1127 29 "%0Success CryptGetUserKey" //   LEVEL=INFO FUNC=PKCS10CalculateHashandSign
+{
+}
+#typev  PKCS10Request_cpp551 19 "%0Unsupported DN name:%10!s!" //   LEVEL=ERR FUNC=GetObjectID
+{
+(WCHAR*)wstrDNItemName.c_str(), ItemWString -- 10
+}
+#typev  PKCS10Request_cpp487 18 "%0DN item name:%10!s!" //   LEVEL=INFO FUNC=GetObjectID
+{
+(WCHAR*)wstrDNItemName.c_str(), ItemWString -- 10
+}
+#typev  PKCS10Request_cpp571 20 "%0Subject sub sections count:%10!d!" //   LEVEL=INFO FUNC=ParseSubject
+{
+nSubSectionsCount, ItemLong -- 10
+}
+#typev  PKCS10Request_cpp220 16 "%0Object Identifier:%10!s!" //   LEVEL=INFO FUNC=ComposeSpecialAttribute
+{
+objectAttribute.pszObjId, ItemString -- 10
+}
+#typev  PKCS10Request_cpp72 10 "%0String Type:%10!u!; String Data Size:%11!u!" //   LEVEL=INFO FUNC=ComposeAttributes
+{
+dwStringType, ItemLong -- 10
+dwDataSize, ItemLong -- 11
+}
+#typev  PKCS10Request_cpp155 14 "%0Object Identifier:%10!s!" //   LEVEL=INFO FUNC=ComposeAttributes
+{
+objectAttribute.pszObjId, ItemString -- 10
+}
+#typev  PKCS10Request_cpp72 10 "%0String Type:%10!u!; String Data Size:%11!u!" //   LEVEL=INFO FUNC=ComposeAttributes
+{
+dwStringType, ItemLong -- 10
+dwDataSize, ItemLong -- 11
+}
+#typev  PKCS10Request_cpp108 12 "%0BIT String Data Size:%10!u!" //   LEVEL=INFO FUNC=ComposeSignPublicKeyData
+{
+dwDataSize, ItemLong -- 10
+}
+#typev  PKCS10Request_cpp728 23 "%0dwSM2AlgorithmSize :%10!ld!" //   LEVEL=INFO FUNC=ComposeSignPublicKeyData
+{
+dwSM2AlgorithmOID, ItemLong -- 10
+}
+#typev  PKCS10Request_cpp72 10 "%0String Type:%10!u!; String Data Size:%11!u!" //   LEVEL=INFO FUNC=ComposeSubjectChild
+{
+dwStringType, ItemLong -- 10
+dwDataSize, ItemLong -- 11
+}
+#typev  PKCS10Request_cpp72 10 "%0String Type:%10!u!; String Data Size:%11!u!" //   LEVEL=INFO FUNC=ComposeSubjectChild
+{
+dwStringType, ItemLong -- 10
+dwDataSize, ItemLong -- 11
+}
+#typev  PKCS10Request_cpp635 21 "%0Child DN section count:%10!d!" //   LEVEL=INFO FUNC=ComposeSubject
+{
+(int)vetChilds.size(), ItemLong -- 10
+}
+#typev  PKCS10Request_cpp1377 49 "%0[%10!s!(%11!d!)]: dwTempPublicKeyDataSize =%12!d!" //   LEVEL=INFO FUNC=PKCS10RequestBase64
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwTempPublicKeyDataSize, ItemLong -- 12
+}
+#typev  PKCS10Request_cpp1339 48 "%0Key bitlen(CMBC): %10!d!" //   LEVEL=INFO FUNC=PKCS10RequestBase64
+{
+stSM2PubKeyBLOB.BitLen, ItemLong -- 10
+}
+#typev  PKCS10Request_cpp1288 47 "%0Digital Sign Algorithm:%10!s!" //   LEVEL=INFO FUNC=PKCS10RequestBase64
+{
+strDigitalSignAlgorithm.c_str(), ItemString -- 10
+}
+#typev  PKCS10Request_cpp1287 46 "%0Temp Public Key Size:%10!u!" //   LEVEL=INFO FUNC=PKCS10RequestBase64
+{
+dwTempPublicKeyDataSize, ItemLong -- 10
+}
+#typev  PKCS10Request_cpp1286 45 "%0Sign Public Key Size:%10!u!" //   LEVEL=INFO FUNC=PKCS10RequestBase64
+{
+dwSignPublicKeyDataSize, ItemLong -- 10
+}
+#typev  PKCS10Request_cpp1285 44 "%0strSM2OID :%10!s!" //   LEVEL=INFO FUNC=PKCS10RequestBase64
+{
+strSM2OID.c_str(), ItemString -- 10
+}
+#typev  PKCS10Request_cpp1284 43 "%0Asymmetric Algorithm:%10!s!" //   LEVEL=INFO FUNC=PKCS10RequestBase64
+{
+strAsymmetricAlgorithm.c_str(), ItemString -- 10
+}
+#typev  PKCS10Request_cpp1283 42 "%0Subject:%10!s!" //   LEVEL=INFO FUNC=PKCS10RequestBase64
+{
+wstrSubject.c_str(), ItemWString -- 10
+}
+#typev  PKCS10Request_cpp1282 41 "%0dwSignCertKeySpec:%10!ld!" //   LEVEL=INFO FUNC=PKCS10RequestBase64
+{
+dwSignCertKeySpec, ItemLong -- 10
+}

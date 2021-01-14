@@ -1,0 +1,764 @@
+// PDB:  D:\Builds\9\Toolkits\CertEnrollment_Pro_IE\Binaries\x86\Release\CryptoKit.CertEnrollment.Pro.x86.dll
+// PDB:  Last Updated :2018-4-9:1:12:53:434 (UTC) [tracepdb]
+bf42aca6-95c8-90ee-daa4-2ad0d2b5e5b3 CertEnrollmentKernel // SRC=ImportEncryptCert.cpp MJ= MN=
+#typev  ImportEncryptCert_cpp2575 151 "%0[%10!s!(%11!d!)]: dwTempPublicKeyDataSize =%12!d!" //   LEVEL=INFO FUNC=ConvertSM2TmpPublicKeyStructtoCANeeded
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwTempPublicKeyDataSize, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2549 149 "%0[%10!s!(%11!d!)]: dwTempPublicKeyDataSize =%12!d!" //   LEVEL=INFO FUNC=ConvertSM2TmpPublicKeyStructtoCANeeded
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwTempPublicKeyDataSize, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2500 148 "%0[%10!s!(%11!d!)]: cbEncryptedPrivateKeyBlob = %12!d!." //   LEVEL=INFO FUNC=ImportEncryptCertEx_SM2
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+cbEncryptedPrivateKeyBlob, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2487 147 "%0[%10!s!(%11!d!)]: dwEncryptedPrivateKeyLen = %12!d!." //   LEVEL=INFO FUNC=ImportEncryptCertEx_SM2
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwEncryptedPrivateKeyLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2486 146 "%0[%10!s!(%11!d!)]: dwPublicKeyCertLen = %12!d!." //   LEVEL=INFO FUNC=ImportEncryptCertEx_SM2
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwPublicKeyCertLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1641 93 "%0[%10!s!(%11!d!)]: pCertContext=0x%12!x!" //   LEVEL=INFO FUNC=AddCertificateToSystemStore
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned long)pCertContext, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1628 92 "%0[%10!s!(%11!d!)]: CertAddEncodedCertificateToStore ok" //   LEVEL=INFO FUNC=AddCertificateToSystemStore
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1615 91 "%0[%10!s!(%11!d!)]: CertOpenStore ok" //   LEVEL=INFO FUNC=AddCertificateToSystemStore
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1604 90 "%0[%10!s!(%11!d!)]: hCryptProv=(0x%12!x!)" //   LEVEL=INFO FUNC=AddCertificateToSystemStore
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned int)hCryptProv, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1585 89 "%0Exit(%10!s!)" //   LEVEL=INFO FUNC=ImportPlainSessionBlob
+{
+__FUNCTION__, ItemString -- 10
+}
+#typev  ImportEncryptCert_cpp1582 88 "%0[%10!s!(%11!d!)]: error occur(0x%12!x!)" //   LEVEL=INFO FUNC=ImportPlainSessionBlob
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+::GetLastError(), ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1566 87 "%0[%10!s!(%11!d!)]: CryptImportKey ok" //   LEVEL=INFO FUNC=ImportPlainSessionBlob
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1550 86 "%0[%10!s!(%11!d!)]: CryptGenRandom ok" //   LEVEL=INFO FUNC=ImportPlainSessionBlob
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1521 85 "%0[%10!s!(%11!d!)]: LocalAlloc ok" //   LEVEL=INFO FUNC=ImportPlainSessionBlob
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1513 84 "%0[%10!s!(%11!d!)]: CryptGetKeyParam ok" //   LEVEL=INFO FUNC=ImportPlainSessionBlob
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1507 83 "%0[%10!s!(%11!d!)]: CryptGetKeyParam ok" //   LEVEL=INFO FUNC=ImportPlainSessionBlob
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1493 82 "%0[%10!s!(%11!d!)]: CryptGetKeyParam ok" //   LEVEL=INFO FUNC=ImportPlainSessionBlob
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1488 81 "%0[%10!s!(%11!d!)]: CryptGenKey ok" //   LEVEL=INFO FUNC=ImportPlainSessionBlob
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1481 80 "%0[%10!s!(%11!d!)]: CryptGetProvParam ok" //   LEVEL=INFO FUNC=ImportPlainSessionBlob
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1447 79 "%0Enter(%10!s!)" //   LEVEL=INFO FUNC=ImportPlainSessionBlob
+{
+__FUNCTION__, ItemString -- 10
+}
+#typev  ImportEncryptCert_cpp1435 78 "%0Exit(%10!s!)" //   LEVEL=INFO FUNC=CreatePrivateExponentOneKey
+{
+__FUNCTION__, ItemString -- 10
+}
+#typev  ImportEncryptCert_cpp1433 77 "%0[%10!s!(%11!d!)]: error occur(0x%12!x!)" //   LEVEL=INFO FUNC=CreatePrivateExponentOneKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+::GetLastError(), ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1409 76 "%0[%10!s!(%11!d!)]: CryptImportKey ok" //   LEVEL=INFO FUNC=CreatePrivateExponentOneKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1350 75 "%0[%10!s!(%11!d!)]: CryptExportKey ok" //   LEVEL=INFO FUNC=CreatePrivateExponentOneKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1346 74 "%0[%10!s!(%11!d!)]: LocalAlloc ok" //   LEVEL=INFO FUNC=CreatePrivateExponentOneKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1342 73 "%0[%10!s!(%11!d!)]: CryptExportKey ok" //   LEVEL=INFO FUNC=CreatePrivateExponentOneKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1337 72 "%0[%10!s!(%11!d!)]: CryptGenKey ok" //   LEVEL=INFO FUNC=CreatePrivateExponentOneKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1332 71 "%0[%10!s!(%11!d!)]: CryptAcquireContext ok" //   LEVEL=INFO FUNC=CreatePrivateExponentOneKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1330 70 "%0[%10!s!(%11!d!)]: CryptAcquireContext failed." //   LEVEL=INFO FUNC=CreatePrivateExponentOneKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1312 69 "%0Enter(%10!s!)" //   LEVEL=INFO FUNC=CreatePrivateExponentOneKey
+{
+__FUNCTION__, ItemString -- 10
+}
+#typev  ImportEncryptCert_cpp702 40 "%0[%10!s!(%11!d!)]: pPrivateKey=0x%12!x!; privateKeyLen=%13!d!" //   LEVEL=INFO FUNC=DecryptPrivateKeywithSessionKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned long)pPrivateKey, ItemLong -- 12
+privateKeyLen, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp625 39 "%0[%10!s!(%11!d!)]: CryptSetKeyParam ok." //   LEVEL=INFO FUNC=ImportEncryptCert_SM2
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp616 38 "%0[%10!s!(%11!d!)]: CryptImportKey ok." //   LEVEL=INFO FUNC=ImportEncryptCert_SM2
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp584 36 "%0[%10!s!(%11!d!)]: stSM2PrivateKeyBlob.AlgID=[%12!d!], stSM2PrivateKeyBlob.BitLen=[%13!d!]." //   LEVEL=INFO FUNC=ImportEncryptCert_SM2
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+stSM2PrivateKeyBlob.AlgID, ItemLong -- 12
+stSM2PrivateKeyBlob.BitLen, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp579 35 "%0[%10!s!(%11!d!)]: stSM2PrivateKeyBlob.AlgID=[%12!d!], stSM2PrivateKeyBlob.BitLen=[%13!d!]." //   LEVEL=INFO FUNC=ImportEncryptCert_SM2
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+stSM2PrivateKeyBlob.AlgID, ItemLong -- 12
+stSM2PrivateKeyBlob.BitLen, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp575 34 "%0[%10!s!(%11!d!)]: dwPrivateKeyLen=[%12!d!], cbPrivateKeyBlob=[%13!d!]." //   LEVEL=INFO FUNC=ImportEncryptCert_SM2
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwPrivateKeyLen, ItemLong -- 12
+cbPrivateKeyBlob, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp1300 68 "%0[%10!s!(%11!d!)]: after erase comma =%12!s!" //   LEVEL=INFO FUNC=EraseCommaInWstr
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstr.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1292 67 "%0[%10!s!(%11!d!)]: before erase comma =%12!s!" //   LEVEL=INFO FUNC=EraseCommaInWstr
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstr.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1202 63 "%0[%10!s!(%11!d!)]: dwUTF8KeyLen=%12!d!, pUTF8Key is:0x%13!x!" //   LEVEL=INFO FUNC=DecodeBase64Key
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwUTF8KeyLen, ItemLong -- 12
+(unsigned long)pUTF8Key, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp1194 62 "%0[%10!s!(%11!d!)]: dwBase64UTF8KeyLen=%12!d!, pBase64UTF8Key is:%13!s!" //   LEVEL=INFO FUNC=DecodeBase64Key
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwBase64UTF8KeyLen, ItemLong -- 12
+(char *)pBase64UTF8Key, ItemString -- 13
+}
+#typev  ImportEncryptCert_cpp1187 61 "%0[%10!s!(%11!d!)]: wstrKey is:%12!s!" //   LEVEL=INFO FUNC=DecodeBase64Key
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrKey.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp2235 131 "%0[%10!s!(%11!d!)]: SM2: hCryptProv=0x%12!x!" //   LEVEL=INFO FUNC=GetCSPHandleofTempPublickey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned long)hCryptProv, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2222 130 "%0[%10!s!(%11!d!)]: RSA:hCryptProv=0x%12!x!" //   LEVEL=INFO FUNC=GetCSPHandleofTempPublickey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned long)hCryptProv, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp830 49 "%0[%10!s!(%11!d!)]: sessionKeyLen=%12!d!" //   LEVEL=INFO FUNC=DecryptSessionKeywithTempKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+sessionKeyLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp825 48 "%0[%10!s!(%11!d!)]: pSessionKey=0x%12!x!; sessionKeyLen=%13!d!" //   LEVEL=INFO FUNC=DecryptSessionKeywithTempKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned long)pSessionKey, ItemLong -- 12
+sessionKeyLen, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp806 47 "%0[%10!s!(%11!d!)]: CryptGetUserKey ok" //   LEVEL=INFO FUNC=DecryptSessionKeywithTempKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp797 46 "%0[%10!s!(%11!d!)]: SM2: hCryptProv=0x%12!x!" //   LEVEL=INFO FUNC=DecryptSessionKeywithTempKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned long)hCryptProv, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp787 45 "%0[%10!s!(%11!d!)]: dwFlags =%12!ld!" //   LEVEL=INFO FUNC=DecryptSessionKeywithTempKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwFlags, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp772 43 "%0[%10!s!(%11!d!)]: RSA:hCryptProv=0x%12!x!" //   LEVEL=INFO FUNC=DecryptSessionKeywithTempKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned long)hCryptProv, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp753 41 "%0[%10!s!(%11!d!)]: pEncryptedSessionKey=0x%12!x!, dwEncryptedSessionKeyLen=%13!d!" //   LEVEL=INFO FUNC=DecryptSessionKeywithTempKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned long)pEncryptedSessionKey, ItemLong -- 12
+dwEncryptedSessionKeyLen, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp1259 66 "%0[%10!s!(%11!d!)]: key's length(%12!d!) is wrong." //   LEVEL=ERR FUNC=GetBase64KeyFromEncryptedData
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+nKeyLength, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1255 65 "%0[%10!s!(%11!d!)]: nKeyLength=%12!d!, nRemainLen=%13!d!" //   LEVEL=INFO FUNC=GetBase64KeyFromEncryptedData
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+nKeyLength, ItemLong -- 12
+nRemainLen, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp1141 60 "%0[%10!s!(%11!d!)]: wstrEncryptedPrivateKey is:%12!s!" //   LEVEL=INFO FUNC=GetSessionKeyandPrivateKeyASN1Obj
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrEncryptedPrivateKey.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1140 59 "%0[%10!s!(%11!d!)]: wstrEncryptedSessionKey is:%12!s!" //   LEVEL=INFO FUNC=GetSessionKeyandPrivateKeyASN1Obj
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrEncryptedSessionKey.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1122 58 "%0[%10!s!(%11!d!)]: ntmp=%12!d!." //   LEVEL=ERR FUNC=GetSessionKeyandPrivateKeyASN1Obj
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+ntmp, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1117 57 "%0[%10!s!(%11!d!)]: wchar16=%12!s!" //   LEVEL=INFO FUNC=GetSessionKeyandPrivateKeyASN1Obj
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wchar16.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1108 56 "%0[%10!s!(%11!d!)]: ntmp=%12!d!." //   LEVEL=ERR FUNC=GetSessionKeyandPrivateKeyASN1Obj
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+ntmp, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1103 55 "%0[%10!s!(%11!d!)]: wchar16=%12!s!" //   LEVEL=INFO FUNC=GetSessionKeyandPrivateKeyASN1Obj
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wchar16.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1095 54 "%0[%10!s!(%11!d!)]: ntmp=%12!d!." //   LEVEL=ERR FUNC=GetSessionKeyandPrivateKeyASN1Obj
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+ntmp, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1090 53 "%0[%10!s!(%11!d!)]: wchar16=%12!s!" //   LEVEL=INFO FUNC=GetSessionKeyandPrivateKeyASN1Obj
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wchar16.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp116 20 "%0[%10!s!(%11!d!)]: non-microsoft's CSP: CryptSetKeyParam ok" //   LEVEL=INFO FUNC=ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp105 19 "%0[%10!s!(%11!d!)]: MS: AddCertificateToSystemStore ok" //   LEVEL=INFO FUNC=ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp83 18 "%0[%10!s!(%11!d!)]: SM2: CryptAcquireContext ok" //   LEVEL=INFO FUNC=ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp73 17 "%0[%10!s!(%11!d!)]: dwFlags = %12!ld!" //   LEVEL=INFO FUNC=ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwFlags, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp63 16 "%0[%10!s!(%11!d!)]: RSA: CryptAcquireContext ok" //   LEVEL=INFO FUNC=ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp48 15 "%0[%10!s!(%11!d!)]: dumpFileName=%12!s!" //   LEVEL=INFO FUNC=ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dumpFileName.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp39 14 "%0[%10!s!(%11!d!)]: wstrKeyAlgorithm=%12!s!" //   LEVEL=INFO FUNC=ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrKeyAlgorithm.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp38 13 "%0[%10!s!(%11!d!)]: wstrContainerName=%12!s!" //   LEVEL=INFO FUNC=ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrContainerName.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp37 12 "%0[%10!s!(%11!d!)]: wstrCSPName=%12!s!" //   LEVEL=INFO FUNC=ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrCSPName.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp36 11 "%0[%10!s!(%11!d!)]: wstrSignCert=%12!s!" //   LEVEL=INFO FUNC=ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrSignCert.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp35 10 "%0[%10!s!(%11!d!)]: dwKeySpec=%12!ld!" //   LEVEL=INFO FUNC=ImportSignCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwKeySpec, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2065 124 "%0[%10!s!(%11!d!)]: ntmp=%12!d!." //   LEVEL=ERR FUNC=GetSessionKeyandPrivateKeyASN1ObjEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+ntmp, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2082 126 "%0[%10!s!(%11!d!)]: wstrEncryptedPrivateKey is:%12!s!" //   LEVEL=INFO FUNC=GetSessionKeyandPrivateKeyASN1ObjEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrEncryptedPrivateKey.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp2081 125 "%0[%10!s!(%11!d!)]: wstrEncryptedSessionKey is:%12!s!" //   LEVEL=INFO FUNC=GetSessionKeyandPrivateKeyASN1ObjEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrEncryptedSessionKey.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp2050 123 "%0[%10!s!(%11!d!)]: wchar16=%12!s!" //   LEVEL=INFO FUNC=GetSessionKeyandPrivateKeyASN1ObjEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wchar16.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp2040 122 "%0[%10!s!(%11!d!)]: ntmp=%12!d!." //   LEVEL=ERR FUNC=GetSessionKeyandPrivateKeyASN1ObjEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+ntmp, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2035 121 "%0[%10!s!(%11!d!)]: wchar16=%12!s!" //   LEVEL=INFO FUNC=GetSessionKeyandPrivateKeyASN1ObjEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wchar16.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp2027 120 "%0[%10!s!(%11!d!)]: ntmp=%12!d!." //   LEVEL=ERR FUNC=GetSessionKeyandPrivateKeyASN1ObjEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+ntmp, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2023 119 "%0[%10!s!(%11!d!)]: wchar16=%12!s!" //   LEVEL=INFO FUNC=GetSessionKeyandPrivateKeyASN1ObjEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wchar16.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp2446 145 "%0[%10!s!(%11!d!)]: dwSpecialAttributeSize = %12!d!." //   LEVEL=INFO FUNC=ComposeObjectIdentifier
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwSpecialAttributeSize, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2409 143 "%0[%10!s!(%11!d!)]: dwEVPPrivateKeyLenTmp = %12!d!." //   LEVEL=INFO FUNC=ComposeRSAEVPPrivateKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwEVPPrivateKeyLenTmp, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2399 142 "%0[%10!s!(%11!d!)]: dwTempTotalSize = %12!d!." //   LEVEL=INFO FUNC=ComposeRSAEVPPrivateKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwTempTotalSize, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2395 141 "%0[%10!s!(%11!d!)]: dwEncryptedPrivateKeyOctStrLen = %12!d!." //   LEVEL=INFO FUNC=ComposeRSAEVPPrivateKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwEncryptedPrivateKeyOctStrLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2390 140 "%0[%10!s!(%11!d!)]: dwEncryptedSessionKeyOctStrLen = %12!d!." //   LEVEL=INFO FUNC=ComposeRSAEVPPrivateKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwEncryptedSessionKeyOctStrLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2385 139 "%0[%10!s!(%11!d!)]: dwSymAlgIDLen = %12!d!." //   LEVEL=INFO FUNC=ComposeRSAEVPPrivateKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwSymAlgIDLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2380 138 "%0[%10!s!(%11!d!)]: dwAsymAlgIDLen = %12!d!." //   LEVEL=INFO FUNC=ComposeRSAEVPPrivateKey
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwAsymAlgIDLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2326 137 "%0[%10!s!(%11!d!)]: ImportEncryptCertEx_RSA CryptSetKeyParam ok." //   LEVEL=INFO FUNC=ImportEncryptCertEx_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp2317 136 "%0[%10!s!(%11!d!)]: ImportEncryptCertEx_RSA non-microsoft's CSP: CryptImportKey ok." //   LEVEL=INFO FUNC=ImportEncryptCertEx_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp2306 135 "%0[%10!s!(%11!d!)]: cbEncryptedPrivateKeyBlob = %12!d!" //   LEVEL=INFO FUNC=ImportEncryptCertEx_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+cbEncryptedPrivateKeyBlob, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2302 134 "%0[%10!s!(%11!d!)]: dwEVPPrivateKey = %12!d!, stRsaPrivateKeyBlob.EVPPrivateKeyBitLen=%13!d!." //   LEVEL=INFO FUNC=ImportEncryptCertEx_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwEVPPrivateKey, ItemLong -- 12
+stRsaPrivateKeyBlob.EVPPrivateKeyBitLen, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp2271 133 "%0[%10!s!(%11!d!)]: rsaKeyLen =%12!d!" //   LEVEL=INFO FUNC=ImportEncryptCertEx_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+rsaKeyLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2270 132 "%0[%10!s!(%11!d!)]: wstrCSPName =%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCertEx_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrCSPName.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp485 32 "%0[%10!s!(%11!d!)]: length error: rsaKeyLen=%12!d!, dwModulusSize=%13!d!, dwPrime1Size=%14!d!, dwPrime2Size=%15!d!,               dwExponent1Size=%16!d!,dwExponent2Size=%17!d!, dwCoefficientSize=%18!d!, dwPrivateExponentSize=%19!d!" //   LEVEL=ERR FUNC=getMicrosoftSoftPkcs1PrivateKeyBlob_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+rsaKeyLen, ItemLong -- 12
+dwModulusSize, ItemLong -- 13
+dwPrime1Size, ItemLong -- 14
+dwPrime2Size, ItemLong -- 15
+dwExponent1Size, ItemLong -- 16
+dwExponent2Size, ItemLong -- 17
+dwCoefficientSize, ItemLong -- 18
+dwPrivateExponentSize, ItemLong -- 19
+}
+#typev  ImportEncryptCert_cpp493 33 "%0[%10!s!(%11!d!)]: pbPrivateKeyBlob=0x%12!x!, cbPrivateKeyBlob=%13!d!" //   LEVEL=INFO FUNC=getMicrosoftSoftPkcs1PrivateKeyBlob_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned long)pbPrivateKeyBlob, ItemLong -- 12
+cbPrivateKeyBlob, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp469 31 "%0[%10!s!(%11!d!)]: pbyCoefficientForMSRSA=0x%12!x!, dwCoefficientSizeForMSRSA=%13!d!" //   LEVEL=INFO FUNC=getMicrosoftSoftPkcs1PrivateKeyBlob_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned long)pbyCoefficientForMSRSA, ItemLong -- 12
+dwCoefficientSizeForMSRSA, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp462 30 "%0[%10!s!(%11!d!)]: pbyCoefficient=0x%12!x!, dwCoefficientSize=%13!d!" //   LEVEL=INFO FUNC=getMicrosoftSoftPkcs1PrivateKeyBlob_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+(unsigned long)pbyCoefficient, ItemLong -- 12
+dwCoefficientSize, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp390 29 "%0[%10!s!(%11!d!)]: DecodePrivateKey ok" //   LEVEL=INFO FUNC=getMicrosoftSoftPkcs1PrivateKeyBlob_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp380 28 "%0[%10!s!(%11!d!)]: dwPrivateKeyPkcs8Len=%12!d!" //   LEVEL=INFO FUNC=getMicrosoftSoftPkcs1PrivateKeyBlob_RSA
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwPrivateKeyPkcs8Len, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp301 27 "%0Microsoft CSP: %10!s!" //   LEVEL=INFO FUNC=ImportEncryptCert_RSA
+{
+wstrCSPName.c_str(), ItemWString -- 10
+}
+#typev  ImportEncryptCert_cpp169 26 "%0[%10!s!(%11!d!)]: keyLen=%12!d!" //   LEVEL=INFO FUNC=ImportEncryptCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+keyLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp168 25 "%0[%10!s!(%11!d!)]: wstrKeyAlgorithm=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrKeyAlgorithm.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp167 24 "%0[%10!s!(%11!d!)]: wstrContainerName=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrContainerName.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp166 23 "%0[%10!s!(%11!d!)]: wstrCSPName=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrCSPName.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp165 22 "%0[%10!s!(%11!d!)]: wstrEncryptPublicCert=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrEncryptPublicCert.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp164 21 "%0[%10!s!(%11!d!)]: wstrEncryptedPrivateKeyData=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCert
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrEncryptedPrivateKeyData.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp2172 129 "%0[%10!s!(%11!d!)]: encryptedPrivateKeyLen=%12!d!" //   LEVEL=INFO FUNC=ParseEncryptCertPrivateKeyDataEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+encryptedPrivateKeyLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2161 128 "%0[%10!s!(%11!d!)]: encryptedSessionKeyLen=%12!d!" //   LEVEL=INFO FUNC=ParseEncryptCertPrivateKeyDataEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+encryptedSessionKeyLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp2148 127 "%0[%10!s!(%11!d!)]: dwSessionKeyASN1Len=%12!d!, dwPrivateKeyASN1Len=%13!d!" //   LEVEL=INFO FUNC=ParseEncryptCertPrivateKeyDataEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwSessionKeyASN1Len, ItemLong -- 12
+dwPrivateKeyASN1Len, ItemLong -- 13
+}
+#typev  ImportEncryptCert_cpp1959 118 "%0[%10!s!(%11!d!)]: ImportEncryptCertEx_SM2(Third): 0x%12!08x!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+hResult, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1943 117 "%0Assuem old CA(C1C2C3) ---> new Key(C1C3C2)" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+}
+#typev  ImportEncryptCert_cpp1935 116 "%0[%10!s!(%11!d!)]: ImportEncryptCertEx_SM2(Second): 0x%12!08x!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+hResult, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1922 115 "%0Assuem new CA(C1C3C2) ---> old Key(C1C2C3)" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+}
+#typev  ImportEncryptCert_cpp1916 114 "%0[%10!s!(%11!d!)]: ImportEncryptCertEx_SM2(First): 0x%12!08x!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+hResult, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1904 113 "%0dwNeedRetry: 0x%10!d!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+dwNeedRetry, ItemLong -- 10
+}
+#typev  ImportEncryptCert_cpp1900 112 "%0[%10!s!(%11!d!)]: ImportEncryptCertEx_RSA ok" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+}
+#typev  ImportEncryptCert_cpp1867 109 "%0[%10!s!(%11!d!)]: dwEncryptedPrivateKeyLen=%12!d!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwEncryptedPrivateKeySize, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1866 108 "%0[%10!s!(%11!d!)]: dwEncryptedSessionKeyLen=%12!d!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwEncryptedSessionKeySize, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1848 107 "%0[%10!s!(%11!d!)]: keyLen=%12!d!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+keyLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1847 106 "%0[%10!s!(%11!d!)]: wstrKeyAlgorithm=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrKeyAlgorithm.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1846 105 "%0[%10!s!(%11!d!)]: wstrContainerName=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrContainerName.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1845 104 "%0[%10!s!(%11!d!)]: wstrCSPName=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrCSPName.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1844 103 "%0[%10!s!(%11!d!)]: wstrEncryptPublicCert=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrEncryptPublicCert.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1843 102 "%0[%10!s!(%11!d!)]: wstrEncryptedPrivateKeyData=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCertByEncryptedFormat
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrEncryptedPrivateKeyData.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1749 101 "%0[%10!s!(%11!d!)]: dwNeedRetry=%12!d!" //   LEVEL=INFO FUNC=ImportEncryptCertEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwNeedRetry, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1748 100 "%0[%10!s!(%11!d!)]: dwEncryptCertPrivateKeyFlags=%12!d!" //   LEVEL=INFO FUNC=ImportEncryptCertEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+dwEncryptCertPrivateKeyFlags, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1747 99 "%0[%10!s!(%11!d!)]: keyLen=%12!d!" //   LEVEL=INFO FUNC=ImportEncryptCertEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+keyLen, ItemLong -- 12
+}
+#typev  ImportEncryptCert_cpp1746 98 "%0[%10!s!(%11!d!)]: wstrKeyAlgorithm=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCertEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrKeyAlgorithm.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1745 97 "%0[%10!s!(%11!d!)]: wstrContainerName=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCertEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrContainerName.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1744 96 "%0[%10!s!(%11!d!)]: wstrCSPName=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCertEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrCSPName.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1743 95 "%0[%10!s!(%11!d!)]: wstrEncryptedCert=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCertEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrEncryptePublicCert.c_str(), ItemWString -- 12
+}
+#typev  ImportEncryptCert_cpp1742 94 "%0[%10!s!(%11!d!)]: wstrEncryptedPrivateKeyData=%12!s!" //   LEVEL=INFO FUNC=ImportEncryptCertEx
+{
+__FILE__, ItemString -- 10
+__LINE__, ItemLong -- 11
+wstrEncryptedPrivateKeyData.c_str(), ItemWString -- 12
+}
