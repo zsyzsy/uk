@@ -23,3 +23,12 @@ export function unReportLoss(data) {
     data: data
   })
 }
+// 发送法人认证短信
+export function sendUKMsgToPhone(data) {
+  return request({
+    url: 'common/sendUKMsgToPhone',
+    method: 'post',
+    data: data
+  })
+}
+

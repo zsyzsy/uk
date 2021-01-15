@@ -1,7 +1,7 @@
 <template>
   <div id="certificate-result" class="app-container">
     <img class="result-img" :src="require('@/assets/success.png')" alt="成功">
-    <div class="title">{{ message ||'UK证书更新成功' }}</div>
+    <div class="title">{{ message ||'USBkey证书更新成功' }}</div>
     <div class="center-button">
       <el-button type="primary" @click="goBack">返回</el-button>
     </div>
@@ -12,7 +12,7 @@
 export default {
   data() {
     return {
-      message: 'UK证书更新成功'
+      message: 'USBkey证书更新成功'
     }
   },
   mounted() {
@@ -53,6 +53,7 @@ export default {
   text-align: center;
   .result-img {
     width: 76px;
+    height: 76px;
     margin: 60px 0 32px;
   }
   .title {

@@ -1,8 +1,8 @@
 <template>
   <div id="UK-result" class="app-container">
     <img class="result-img" :src="require('@/assets/success.png')" alt="成功">
-    <div class="title">{{ user.certState === '2'?'UK挂失成功':user.certState === '1'?'UK解挂成功': '' }}</div>
-    <div class="content">{{ '当前挂失序列号的UK将' + (user.certState === '2'?'无法使用':user.certState === '1'?'正常使用' : '不受影响') }}</div>
+    <div class="title">{{ user.certState === '2'?'USBkey挂失成功':user.certState === '1'?'USBkey解挂成功': '' }}</div>
+    <div class="content">{{ '当前挂失序列号的USBkey将' + (user.certState === '2'?'无法使用':user.certState === '1'?'正常使用' : '不受影响') }}</div>
     <div class="center-button">
       <el-button type="primary" @click="goBack">返回</el-button>
     </div>

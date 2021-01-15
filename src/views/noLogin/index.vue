@@ -1,9 +1,9 @@
 <template>
   <div id="certificate">
     <card title="证书下载">
-      <el-form ref="certForm" class="certi-form" :model="certForm" :rules="certRules" label-width="110px">
-        <el-form-item label="UK序号：" prop="usbKeySn">
-          <el-input v-model="certForm.usbKeySn" placeholder="请输入UK序号" />
+      <el-form ref="certForm" class="certi-form certificateManage_box" :model="certForm" :rules="certRules" label-width="110px">
+        <el-form-item label="USBkey序号：" prop="usbKeySN">
+          <el-input v-model="certForm.usbKeySN" placeholder="请输入USBkey序号" />
         </el-form-item>
         <el-form-item label="证书序列号：" prop="certNo">
           <el-input v-model="certForm.certNo" placeholder="请输入证书序列号" />
@@ -18,10 +18,10 @@
       <div class="tip-box">
         <div class="tips-title">温馨提示</div>
         <pre class="tips-content">
-1、UK序号请查看您所领取的UK背面的序列号码，下载码请注意短信留言。
+1、USBkey序号请查看您所领取的USBkey背面的序列号码，下载码请注意短信留言。
 2、请在获得下载码14天内进行证书下载，否则下载码过期，下载码如过期，请到我行营业机构重置下载码。
-3、证书下载前，请确保天府网银助手安装并通过检测，并确保UK连接电脑。
-4、证书下载开始至下载完成前，请不要关闭页面或拔下UK，保证证书成功下载。
+3、证书下载前，请确保天府网银助手安装并通过检测，并确保USBkey连接电脑。
+4、证书下载开始至下载完成前，请不要关闭页面或拔下USBkey，保证证书成功下载。
       </pre>
       </div>
     </card>
@@ -40,11 +40,12 @@ export default {
   },
   data() {
     return {
+      signatureCert: '',
       page: '0',
       certForm: {
         authCode: '',
         certNo: '',
-        usbKeySn: '',
+        usbKeySN: '',
         requestBook: ''
       },
       certRules: {
@@ -54,8 +55,8 @@ export default {
         certNo: [
           { required: true, message: '请输入证书序列号', trigger: 'blur' }
         ],
-        usbKeySn: [
-          { required: true, message: '请输入UK序号', trigger: 'blur' }
+        usbKeySN: [
+          { required: true, message: '请输入USBkey序号', trigger: 'blur' }
         ]
       },
       certifiBoxName: ''
@@ -96,84 +97,79 @@ export default {
     loadCACertific() {
       this.$refs['certForm'].validate((valid) => {
         if (valid) {
-          var strSubjectDN =
-            'CN=TFB@test,OU=Organizational-1,OU=TFB,O=CFCA TEST SM2 OCA31,C=CN' // 证书主题，暂时写死
-          var res1 = window.CryptoAgent.CFCA_SetCSPInfo(
-            '256',
-            this.certifiBoxName
-          )
-          if (!res1) {
-            var errorDesc = window.CryptoAgent.GetLastErrorDesc()
-            console.log('errorDesc:' + errorDesc)
-            this.$notify.error({
-              title: '错误',
-              message: errorDesc
-            })
-            return
-          }
-          var res2 = window.CryptoAgent.CFCA_SetKeyAlgorithm('SM2')
-          if (!res2) {
-            const errorDesc = window.CryptoAgent.GetLastErrorDesc()
-            console.log('errorDesc:' + errorDesc)
-            this.$notify.error({
-              title: '错误',
-              message: 'errorDesc'
-            })
-            return
-          }
-          var pkcs10Requisition = 0
-          // SM2单证
-          try {
-            pkcs10Requisition = window.CryptoAgent.CFCA_PKCS10CertRequisition(
-              strSubjectDN,
-              1,
-              0
-            )
-          } catch (e) {
-            console.log('the get pkcs10Requisition faled:' + e)
-            this.$notify.error({
-              title: '错误',
-              message: e
-            })
-          }
-
-          if (!pkcs10Requisition) {
-            const errorDesc = window.CryptoAgent.GetLastErrorDesc()
-            console.log('errorDesc:' + errorDesc)
-            this.$notify.error({
-              title: '错误',
-              message: '请插入uk'
-            })
-            return
-          }
-          this.certForm.requestBook = pkcs10Requisition
-          const cspName = window.CryptoAgent.CFCA_GetCSPInfo().split('||')[0] // "CGNBET O-KEY CSP v1.0"
-          const cspNameCertCryptoAgent = window.CertCryptoAgent.SelectCertificate(
-            '',
-            '',
-            '',
-            cspName
-          ) // true
-          if (cspNameCertCryptoAgent) {
-            // const SerialNumber = window.CertCryptoAgent.GetSignCertInfo('SerialNumber')
-            // this.certForm.usbKeySn = SerialNumber
-          } else {
-            this.$notify.error({
-              title: '错误',
-              message: '请插入uk'
-            })
-            return
-          }
-          this.certForm.channelNo = '123010201'
-          downloadCert(this.certForm).then((res) => {
-            if (res.code === '00') {
-              this.installCert(res.context.signatureCert)
-            }
-          })
+          this.iscodeInit()
+          // downloadCert(this.certForm).then((res) => {
+          //   if (res.code === '00') {
+          //     _this.signatureCert = res.context.signatureCert
+          //     this.iscodeInit()
+          //     // this.installCert(res.context.signatureCert)
+          //   }
+          // })
         } else {
           return false
         }
       })
+    },
+    // 验证下载码是否输入正确
+    iscodeInit() {
+      debugger
+      var strSubjectDN =
+        'CN=TFB@test,OU=Organizational-1,OU=TFB,O=CFCA TEST SM2 OCA31,C=CN' // 证书主题，暂时写死
+      var res1 = window.CryptoAgent.CFCA_SetCSPInfo('256', this.certifiBoxName)
+      if (!res1) {
+        var errorDesc = window.CryptoAgent.GetLastErrorDesc()
+        console.log('errorDesc:' + errorDesc)
+        this.$notify.error({
+          title: '错误',
+          message: errorDesc
+        })
+        return
+      }
+      var res2 = window.CryptoAgent.CFCA_SetKeyAlgorithm('SM2')
+      if (!res2) {
+        const errorDesc = window.CryptoAgent.GetLastErrorDesc()
+        console.log('errorDesc:' + errorDesc)
+        this.$notify.error({
+          title: '错误',
+          message: 'errorDesc'
+        })
+        return
+      }
+      var pkcs10Requisition = 0
+      // SM2单证
+      try {
+        pkcs10Requisition = window.CryptoAgent.CFCA_PKCS10CertRequisition(
+          strSubjectDN,
+          1,
+          0
+        )
+      } catch (e) {
+        console.log('the get pkcs10Requisition faled:' + e)
+        this.$notify.error({
+          title: '错误',
+          message: e
+        })
+      }
+
+      if (!pkcs10Requisition) {
+        const errorDesc = window.CryptoAgent.GetLastErrorDesc()
+        console.log('errorDesc:' + errorDesc)
+        this.$notify.error({
+          title: '错误',
+          message: '请插入USBkey'
+        })
+        return
+      }
+
+      this.certForm.requestBook = pkcs10Requisition
+      downloadCert(this.certForm).then((res) => {
+        if (res.code === '00') {
+          // _this.signatureCert = res.context.signatureCert;
+          this.installCert(res.context.signatureCert)
+          // this.installCert(res.context.signatureCert)
+        }
+      })
+      // this.installCert(this.signatureCert);
     },
     installCert(signatureCertData) {
       try {
@@ -305,39 +301,48 @@ export default {
   }
 }
 </script>
-
+<style lang="scss" >
+.certificateManage_box {
+  .el-form-item__label {
+    width: 120px !important;
+  }
+  .el-form-item__content {
+    margin-left: 120px !important;
+  }
+}
+</style>
 <style lang="scss" scoped>
 .taps-box {
-    position: relative;
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  .taps {
+    display: flex;
+    justify-content: space-around;
     width: 1280px;
-    margin: 0 auto;
-    .taps {
-      display: flex;
-      justify-content: space-around;
-      width: 1280px;
-      background: #fff;
-      height: 55px;
-      margin: 24px auto 0;
-      border-bottom: 1px solid #e9e9e9;
-      line-height: 55px;
-      color: #293040;
-      font-size: 16px;
-      font-weight: 600;
-      div {
-        cursor: pointer;
-      }
-    }
-    .underline {
-      position: absolute;
-      width: 250px;
-      height: 3px;
-      background: #ffd630;
-      bottom: 0;
-      left: 200px;
-      transition: all 0.5s;
-    }
-    .underline-move {
-      transform: translateX(640px);
+    background: #fff;
+    height: 55px;
+    margin: 24px auto 0;
+    border-bottom: 1px solid #e9e9e9;
+    line-height: 55px;
+    color: #293040;
+    font-size: 16px;
+    font-weight: 600;
+    div {
+      cursor: pointer;
     }
   }
+  .underline {
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background: #ffd630;
+    bottom: 0;
+    left: 200px;
+    transition: all 0.5s;
+  }
+  .underline-move {
+    transform: translateX(640px);
+  }
+}
 </style>

@@ -122,6 +122,7 @@ export default {
           this.loading = true
           this.$store.dispatch('user/login', this.loginForm).then(res => {
             if (res) {
+              sessionStorage.setItem('loginPhone', this.loginForm.phone)
               this.$router.push({ path: this.redirect || '/' })
               this.loading = false
             } else {

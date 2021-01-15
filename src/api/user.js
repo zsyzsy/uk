@@ -26,7 +26,8 @@ export function logout() {
 
 export function getVCode(data) {
   return request({
-    url: 'common/sendMsgToPhone',
+    // url: 'common/sendMsgToPhone',
+    url: 'common/sendUKMsgToPhone',
     method: 'post',
     data: data
   })
@@ -51,6 +52,14 @@ export function setPassword(data) {
 export function changePassWord(data) {
   return request({
     url: 'pwd/change',
+    method: 'post',
+    data: data
+  })
+}
+// 获取手机号
+export function getPhone(data) {
+  return request({
+    url: 'common/getPhone',
     method: 'post',
     data: data
   })

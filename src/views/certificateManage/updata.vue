@@ -4,14 +4,14 @@
       <span class="title">证书下载</span>
     </div> -->
     <div class="taps">
-      <div @click="changePage('0')">UK挂失</div>
-      <div @click="changePage('1')">UK重发</div>
+      <div @click="changePage('0')">USBkey挂失</div>
+      <div @click="changePage('1')">USBkey重发</div>
       <div :class="['underline',page ==='1'?'underline-move':'']" />
     </div>
     <card title="证书更新">
       <el-form ref="certForm" class="certi-form" :model="certForm" :rules="certRules" label-width="110px">
-        <el-form-item label="UK序号：" prop="usbKeySn">
-          <el-input v-model="certForm.usbKeySn" placeholder="请输入UK序号" />
+        <el-form-item label="USBkey序号：" prop="usbKeySn">
+          <el-input v-model="certForm.usbKeySn" placeholder="请输入USBkey序号" />
         </el-form-item>
         <el-form-item label="证书序列号：" prop="serialNo">
           <el-input v-model="certForm.serialNo" placeholder="请输入证书序列号" />
@@ -26,10 +26,10 @@
       <div class="tip-box">
         <div class="tips-title">温馨提示</div>
         <pre class="tips-content">
-1、UK序号请查看您所领取的UK背面的序列好吗，下载码请注意短信留言。
+1、USBkey序号请查看您所领取的USBkey背面的序列好吗，下载码请注意短信留言。
 2、请在获得下载码14天内进行证书下载，否则下载码过期，下载码如过期，请到我行营业机构重置下载码。
-3、证书下载前，请确保天府网银助手安装并通过检测，并确保UK连接电脑。
-4、证书下载开始至下载完成前，请不要关闭页面或拔下UK，保证证书成功下载。
+3、证书下载前，请确保天府网银助手安装并通过检测，并确保USBkey连接电脑。
+4、证书下载开始至下载完成前，请不要关闭页面或拔下USBkey，保证证书成功下载。
       </pre>
       </div>
     </card>
@@ -56,7 +56,7 @@ export default {
       certRules: {
         authCode: [{ required: true, message: '请输入下载码', trigger: 'blur' }],
         serialNo: [{ required: true, message: '请输入证书序列号', trigger: 'blur' }],
-        usbKeySn: [{ required: true, message: '请输入UK序号', trigger: 'blur' }]
+        usbKeySn: [{ required: true, message: '请输入USBkey序号', trigger: 'blur' }]
       },
       certifiBoxName: ''
     }
@@ -133,7 +133,7 @@ export default {
             console.log('errorDesc:' + errorDesc)
             this.$notify.error({
               title: '错误',
-              message: '请插入uk'
+              message: '请插入USBkey'
             })
             return
           }

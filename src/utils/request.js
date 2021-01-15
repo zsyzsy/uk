@@ -14,15 +14,15 @@ const service = axios.create({
 // request interceptor
 service.interceptors.request.use(
   config => {
-    if (config.url === 'refreshVaricationCode') {
-      if (process.env.NODE_ENV === 'development') {
-        config.baseURL = '/ukms'
-        // config.baseURL = 'https://e.etest.tf.cn:4443/ecloud/ukms/'
-      }
-      //  else {
-      //   config.baseURL = 'https://e.etest.tf.cn:4443/ecloud/ukms/'
-      // }
-    }
+    // if (config.url === 'refreshVaricationCode') {
+    //   if (process.env.NODE_ENV === 'development') {
+    //     config.baseURL = '/ukms'
+    //     // config.baseURL = 'https://e.etest.tf.cn:4443/ecloud/ukms/'
+    //   }
+    //   //  else {
+    //   //   config.baseURL = 'https://e.etest.tf.cn:4443/ecloud/ukms/'
+    //   // }
+    // }
     // console.log(process.env.NODE_ENV, '-----')
     // do something before request is sent
 
@@ -35,7 +35,6 @@ service.interceptors.request.use(
     return config
   },
   error => {
-    debugger
     // do something with request error
     console.log(error) // for debug
     return Promise.reject(error)

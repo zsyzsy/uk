@@ -89,13 +89,13 @@ export const constantRoutes = [
     path: '/UKManage',
     component: Layout,
     redirect: '/UKManage/index',
-    meta: { title: 'UK管理', icon: 'home' },
+    meta: { title: 'USBkey管理', icon: 'home' },
     children: [
       {
         path: 'index',
         name: 'UKManageIndex',
         component: () => import('@/views/UKManage/index'),
-        meta: { title: 'UK管理', hideSub: true, hideBreadcrumb: true }
+        meta: { title: 'USBkey管理', hideSub: true, hideBreadcrumb: true }
       },
       {
         path: 'success',
