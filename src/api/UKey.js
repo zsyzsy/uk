@@ -32,3 +32,13 @@ export function sendUKMsgToPhone(data) {
   })
 }
 
+// 法人人脸--发送短信 
+
+export function sendCheckMsg(data) {
+  return request({
+    url: 'legalAuth/sendCheckMsg',
+    method: 'post',
+    data: data
+  })
+}
+

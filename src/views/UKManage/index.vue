@@ -34,13 +34,13 @@
             <!-- <el-form-item label="UK序号：" prop="usbKeySN">
               <el-input v-model="ukForm.usbKeySN" placeholder="请输入需要挂失的UK序号" />
             </el-form-item> -->
-            <el-form-item label="手机号码：" class="ukForm_phone">
+            <el-form-item label="手机号码："  class="ukForm_phone">
               <div class="phone_text">{{ ukForm.phone }}</div>
               <!-- <el-button slot="suffix" class="blue-text" type="text" :disabled="cantCode" @click="getCode">{{ cBttonText }}</el-button> -->
               <!-- </el-input> -->
             </el-form-item>
-            <el-form-item label="验证码：" prop="verificationCode">
-              <el-input v-model="ukForm.verificationCode" placeholder="请输入验证码">
+            <el-form-item label="验证码：" prop="verificationCode1">
+              <el-input v-model="ukForm.verificationCode1" placeholder="请输入验证码">
                 <el-button slot="suffix" class="blue-text" type="text" :disabled="cantCode1" @click="getfrCode">{{ cBttonText1 }}</el-button>
               </el-input>
             </el-form-item>
@@ -77,7 +77,7 @@
 <script>
 import { setUserMessage } from '@/utils/auth'
 import { getVCode, getPhone } from '@/api/user'
-import { reportLoss, unReportLoss, sendUKMsgToPhone } from '@/api/UKey'
+import { reportLoss, unReportLoss, sendUKMsgToPhone,sendCheckMsg } from '@/api/UKey'
 let countTime
 let countTime1
 export default {
@@ -87,7 +87,8 @@ export default {
       ukForm: {
         usbKeySN: '',
         phone: '',
-        verificationCode: ''
+        verificationCode: '',
+        verificationCode1: ''
       },
       isCodeA: false,
       isCodeB: false,
@@ -107,6 +108,9 @@ export default {
           { required: true, message: '请输入经办人手机号码', trigger: 'blur' }
         ],
         verificationCode: [
+          { required: true, message: '请输入验证码', trigger: 'blur' }
+        ],
+        verificationCode1: [
           { required: true, message: '请输入验证码', trigger: 'blur' }
         ]
       }
@@ -144,7 +148,6 @@ export default {
         this.cBttonText1 = '获取验证码'
         this.cantCode1 = false
       } else {
-        debugger
         this.isCodeA = false
         clearInterval(countTime)
         this.cBttonText = '获取验证码'
@@ -219,22 +222,29 @@ export default {
     },
     // 法人代表
     frdbSubmit() {
-      debugger
-      // this.$refs.ukForm.validate((valid) => {
-      //   if (valid) {
-      //     sendCheckMsg({
-      //       msgType: '7',
-      //       cifCode: '',
-      //       code: this.ukForm.verificationCode,
-      //       phone: this.ukForm.phone
-      //     }).then((res) => {
-      //       console.log(res, '=========')
-      //       // if (res.code === "00") {
-
-      //       // }
-      //     })
-      //   }
-      // })
+       this.$refs.ukForm.validate((valid) => {
+        if (valid) {
+          if(!this.ukForm.verificationCode1) {
+            this.$message({
+          message: '请输入短信验证码',
+          type: 'error'
+        })
+        return
+        }
+          sendCheckMsg({
+            code: this.ukForm.verificationCode1,
+            phone: this.ukForm.phone
+          }).then((res) => {
+            console.log(res)
+            if (res.code === "00") {
+this.$message({
+          message: '已向您登录手机号发送一条短人脸识别链接信验，请勿泄露',
+          type: 'success'
+        })
+            }
+          })
+        }
+      })
     },
     submitUnLock() {
       this.$refs.ukForm.validate((valid) => {
