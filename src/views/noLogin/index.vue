@@ -112,7 +112,6 @@ export default {
     },
     // 验证下载码是否输入正确
     iscodeInit() {
-      debugger
       var strSubjectDN =
         'CN=TFB@test,OU=Organizational-1,OU=TFB,O=CFCA TEST SM2 OCA31,C=CN' // 证书主题，暂时写死
       var res1 = window.CryptoAgent.CFCA_SetCSPInfo('256', this.certifiBoxName)
@@ -165,7 +164,7 @@ export default {
       downloadCert(this.certForm).then((res) => {
         if (res.code === '00') {
           // _this.signatureCert = res.context.signatureCert;
-          this.installCert(res.context.signatureCert)
+          this.installCert(res.context.cert)
           // this.installCert(res.context.signatureCert)
         }
       })

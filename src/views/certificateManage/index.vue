@@ -131,16 +131,17 @@ export default {
       }
     },
     loadCACertific() {
-      const _this = this
+      // const _this = this
       this.$refs['certForm'].validate((valid) => {
         if (valid) {
-          certDownload(this.certForm).then((res) => {
-            if (res.code === '00') {
-              _this.signatureCert = res.context.signatureCert
-              this.iscodeInit()
-              // this.installCert(res.context.signatureCert)
-            }
-          })
+          this.iscodeInit()
+          // certDownload(this.certForm).then((res) => {
+          //   if (res.code === '00') {
+          //     _this.signatureCert = res.context.signatureCert
+          //     this.iscodeInit()
+          //     // this.installCert(res.context.signatureCert)
+          //   }
+          // })
         } else {
           return false
         }
@@ -173,11 +174,7 @@ export default {
       var pkcs10Requisition = 0
       // SM2单证
       try {
-        pkcs10Requisition = window.CryptoAgent.CFCA_PKCS10CertRequisition(
-          strSubjectDN,
-          1,
-          0
-        )
+        pkcs10Requisition = window.CryptoAgent.CFCA_PKCS10CertRequisition(strSubjectDN, 1, 0)
       } catch (e) {
         console.log('the get pkcs10Requisition faled:' + e)
         this.$notify.error({
@@ -197,7 +194,7 @@ export default {
       }
 
       this.certForm.requestBook = pkcs10Requisition
-      window.CryptoAgent.CFCA_GetCSPInfo().split('||')[0]
+      // window.CryptoAgent.CFCA_GetCSPInfo().split('||')[0]
       // const cspName = window.CryptoAgent.CFCA_GetCSPInfo().split('||')[0] // "CGNBET O-KEY CSP v1.0"
       // const cspNameCertCryptoAgent = window.CertCryptoAgent.SelectCertificate(
       //   '',
@@ -209,12 +206,7 @@ export default {
 
       if (this.page === '1') {
         const cspName = window.CryptoAgent.CFCA_GetCSPInfo().split('||')[0] // "CGNBET O-KEY CSP v1.0"
-        const cspNameCertCryptoAgent = window.CertCryptoAgent.SelectCertificate(
-          '',
-          '',
-          '',
-          cspName
-        )
+        const cspNameCertCryptoAgent = window.CertCryptoAgent.SelectCertificate('', '', '', cspName)
         let SerialNumber = ''
         if (cspNameCertCryptoAgent) {
           SerialNumber = window.CertCryptoAgent.GetSignCertInfo('SerialNumber')
@@ -230,12 +222,12 @@ export default {
       //   return
       // }
       if (this.page === '0') {
-        this.installCert(this.signatureCert)
-        // certDownload(this.certForm).then((res) => {
-        //   if (res.code === '00') {
-        // this.installCert(res.context.signatureCert)
-        //   }
-        // })
+        // this.installCert(this.signatureCert)
+        certDownload(this.certForm).then((res) => {
+          if (res.code === '00') {
+            this.installCert(res.context.signatureCert)
+          }
+        })
       } else {
         updateCert(this.certForm).then((res) => {
           if (res.code === '00') {

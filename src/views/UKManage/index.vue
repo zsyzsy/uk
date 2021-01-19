@@ -34,7 +34,7 @@
             <!-- <el-form-item label="UK序号：" prop="usbKeySN">
               <el-input v-model="ukForm.usbKeySN" placeholder="请输入需要挂失的UK序号" />
             </el-form-item> -->
-            <el-form-item label="手机号码："  class="ukForm_phone">
+            <el-form-item label="手机号码：" class="ukForm_phone">
               <div class="phone_text">{{ ukForm.phone }}</div>
               <!-- <el-button slot="suffix" class="blue-text" type="text" :disabled="cantCode" @click="getCode">{{ cBttonText }}</el-button> -->
               <!-- </el-input> -->
@@ -77,7 +77,7 @@
 <script>
 import { setUserMessage } from '@/utils/auth'
 import { getVCode, getPhone } from '@/api/user'
-import { reportLoss, unReportLoss, sendUKMsgToPhone,sendCheckMsg } from '@/api/UKey'
+import { reportLoss, unReportLoss, sendUKMsgToPhone, sendCheckMsg } from '@/api/UKey'
 let countTime
 let countTime1
 export default {
@@ -222,25 +222,25 @@ export default {
     },
     // 法人代表
     frdbSubmit() {
-       this.$refs.ukForm.validate((valid) => {
+      this.$refs.ukForm.validate((valid) => {
         if (valid) {
-          if(!this.ukForm.verificationCode1) {
+          if (!this.ukForm.verificationCode1) {
             this.$message({
-          message: '请输入短信验证码',
-          type: 'error'
-        })
-        return
-        }
+              message: '请输入短信验证码',
+              type: 'error'
+            })
+            return
+          }
           sendCheckMsg({
             code: this.ukForm.verificationCode1,
             phone: this.ukForm.phone
           }).then((res) => {
             console.log(res)
-            if (res.code === "00") {
-this.$message({
-          message: '已向您登录手机号发送一条短人脸识别链接信验，请勿泄露',
-          type: 'success'
-        })
+            if (res.code === '00') {
+              this.$message({
+                message: '已向您登录手机号发送一条短人脸识别链接信验，请勿泄露',
+                type: 'success'
+              })
             }
           })
         }
