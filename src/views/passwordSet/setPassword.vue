@@ -1,5 +1,5 @@
 <template>
-  <div id="certificate">
+  <div id="certificate" class="setPassword">
     <card title="修改登录密码">
       <p class="tips">您所填写的手机号码作为您的登录账号，请牢记客户号、登录手机号及密码</p>
       <el-form ref="setPassForm" :rules="passRules" class="certi-form" :model="setPassForm" label-width="120px">
@@ -8,6 +8,11 @@
         </el-form-item>
         <el-form-item label="新登录密码：" prop="newPwd">
           <vSysKeyboard input-box-id="newPwd" is-to-use="1" placeholder="请输入新登录密码" @newPwd="res=>{passwordChange('newPwd',res)}" />
+          <el-alert
+            title="请输入6位纯数字"
+            type="warning"
+            show-icon
+          />
         </el-form-item>
         <el-form-item label="确认新密码：" prop="confirmPassWd">
           <vSysKeyboard input-box-id="confirmPassWd" is-to-use="1" placeholder="请重复新登录密码" @confirmPassWd="res=>{passwordChange('confirmPassWd',res)}" />
@@ -71,6 +76,7 @@ export default {
 #certificate {
   .el-form-item {
     input {
+      padding: 0 14px;
       width: 320px;
       height: 32px;
       border: 1px solid #dcdfe6;
