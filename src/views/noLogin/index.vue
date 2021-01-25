@@ -13,7 +13,7 @@
         </el-form-item>
       </el-form>
       <div class="center-button">
-        <el-button type="primary" @click="loadCACertific">下载证书</el-button>
+        <el-button type="primary"  @click="loadCACertific">下载证书</el-button>
       </div>
       <div class="tip-box">
         <div class="tips-title">温馨提示</div>
@@ -33,7 +33,9 @@
 import { downloadCert } from '@/api/noLogin'
 import { setUserMessage } from '@/utils/auth'
 import card from '@/components/card'
+import { showLoading, hideLoading } from '@/utils/loading'
 
+let countTime
 export default {
   components: {
     card
@@ -95,6 +97,7 @@ export default {
       }
     },
     loadCACertific() {
+     
       this.$refs['certForm'].validate((valid) => {
         if (valid) {
           this.iscodeInit()
@@ -112,6 +115,7 @@ export default {
     },
     // 验证下载码是否输入正确
     iscodeInit() {
+      showLoading()
       var strSubjectDN =
         'CN=TFB@test,OU=Organizational-1,OU=TFB,O=CFCA TEST SM2 OCA31,C=CN' // 证书主题，暂时写死
       var res1 = window.CryptoAgent.CFCA_SetCSPInfo('256', this.certifiBoxName)
@@ -162,6 +166,7 @@ export default {
 
       this.certForm.requestBook = pkcs10Requisition
       downloadCert(this.certForm).then((res) => {
+          clearInterval(countTime)
         if (res.code === '00') {
           // _this.signatureCert = res.context.signatureCert;
           this.installCert(res.context.cert)

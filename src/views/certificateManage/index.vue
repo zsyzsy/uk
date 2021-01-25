@@ -69,6 +69,7 @@
 import { certDownload, updateCert } from '@/api/certification'
 import { setUserMessage } from '@/utils/auth'
 import card from '@/components/card'
+import { showLoading, hideLoading } from '@/utils/loading'
 
 export default {
   components: {
@@ -149,6 +150,7 @@ export default {
     },
     // 验证下载码是否输入正确
     iscodeInit() {
+      showLoading()
       var strSubjectDN =
         'CN=TFB@test,OU=Organizational-1,OU=TFB,O=CFCA TEST SM2 OCA31,C=CN' // 证书主题，暂时写死
       var res1 = window.CryptoAgent.CFCA_SetCSPInfo('256', this.certifiBoxName)

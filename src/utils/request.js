@@ -2,7 +2,7 @@ import axios from 'axios'
 import { MessageBox, Message } from 'element-ui'
 import store from '@/store'
 import { getToken } from '@/utils/auth'
-
+import { showLoading, hideLoading } from '@/utils/loading'
 // create an axios instance
 const service = axios.create({
   // baseURL: process.env.NODE_ENV === 'development' ? '/api' : 'https://e.etest.tf.cn:4443/ecloud/ms/',
@@ -14,6 +14,7 @@ const service = axios.create({
 // request interceptor
 service.interceptors.request.use(
   config => {
+     showLoading()
     // if (config.url === 'refreshVaricationCode') {
     //   if (process.env.NODE_ENV === 'development') {
     //     config.baseURL = '/ukms'
@@ -35,6 +36,7 @@ service.interceptors.request.use(
     return config
   },
   error => {
+    hideLoading();
     // do something with request error
     console.log(error) // for debug
     return Promise.reject(error)
@@ -54,6 +56,7 @@ service.interceptors.response.use(
    * You can also judge the status by HTTP Status Code
    */
   response => {
+    hideLoading()
     const res = response.data
     if (res.code === '03') {
       // to re-login
@@ -79,10 +82,11 @@ service.interceptors.response.use(
     }
   },
   error => {
+    hideLoading()
     console.log(error, '--error----') // for debug
     const reg1 = /timeout/gi
     let msg = error.message
-    if (reg1.test(msg)) {
+    if (reg1.test(msg)) {d
       msg = '请求超时,请检查网络环境'
     }
     Message({
